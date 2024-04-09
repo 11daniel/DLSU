@@ -1,0 +1,28 @@
+Row and column size: 
+ORIGINAL STRINGS
+lynx                eve                 andromeda           
+aurigans            cygnus              civic               
+aquarius            aviva               hydra               
+
+TRANSPOSED MATRIX
+lynx                aurigans            aquarius            
+eve                 cygnus              aviva               
+andromeda           civic               hydra               
+
+REVERSED STRINGS
+xnyl                eve                 ademordna           
+snagirua            sungyc              civic               
+suirauqa            aviva               ardyh               
+
+PALINDROMES
+1 eve
+2 civic
+3 aviva
+
+TOTAL COUNT: 3
+
+VOWELED STRINGS
+1 eve
+2 aquarius
+3 aviva
+

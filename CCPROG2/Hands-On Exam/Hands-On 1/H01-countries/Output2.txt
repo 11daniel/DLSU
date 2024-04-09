@@ -1,0 +1,28 @@
+Enter name of countries you want to visit: 
+
+
+List of Favorite Countries:
+Korea	 Italy	 France	 
+Taiwan	 Korea	 USA	 
+Korea	 Italy	 Japan	 
+Search a Country you want to visit:
+Sweden not found in row 1
+Sweden not found in row 2
+Sweden not found in your list of favorite countries
+Thailand not found in your list of favorite countries
+
+Frequency of each string (country name) from the 2D array:
+
+Korea : 3
+Italy : 2
+France : 1
+Taiwan : 1
+USA : 1
+Japan : 1
+
+ Sorted Array of String in Row-Wise technique 
+
+List of Favorite Countries:
+France	 Italy	 Korea	 
+Korea	 Taiwan	 USA	 
+Italy	 Japan	 Korea	 

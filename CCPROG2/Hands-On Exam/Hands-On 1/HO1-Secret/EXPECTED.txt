@@ -1,0 +1,10 @@
+Key: Word: Encrypted zany into mnal
+
+Decrypted mnal into zany
+Decrypted zany into mnal
+
+Sentence: -ccprog--is--an--important--foundation--subject-
+Merged message = "how are you doing"
+
+Merged Encrypted = "ubj ner lbh qbvat"
+Merged Decrypted = "ppcebt vf na vzcbegnag sbhaqngvba fhowrpg"

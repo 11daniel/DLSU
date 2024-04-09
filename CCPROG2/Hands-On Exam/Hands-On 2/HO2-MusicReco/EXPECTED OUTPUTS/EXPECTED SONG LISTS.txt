@@ -1,0 +1,87 @@
+84 Songs loaded in the DB
+Title                         Artist
+-----------------------------------------------------
+Happy Synthesizer             Vocaloid
+Rakugakist                    Vocaloid
+Love Song                     Vocaloid
+Holy Lance Explosion Boy      Vocaloid
+Tale of a Deep Sea Lily       Vocaloid
+Boombayah                     Blackpink
+How You Like That             Blackpink
+Lovesick Girls                Blackpink
+Kill This Love                Blackpink
+Pink Venom                    Blackpink
+Pretty Savage                 Blackpink
+As If It's Your Last          Blackpink
+IDGAF                         Dua Lipa
+New Rules                     Dua Lipa
+Physical                      Dua Lipa
+Hallucinate                   Dua Lipa
+One Kiss                      Dua Lipa
+DNA                           BTS
+DYNAMITE                      BTS
+Fake Love                     BTS
+What is Love?                 TWICE
+Heart Shaker                  TWICE
+TT                            TWICE
+Permission To Dance           BTS
+Yet To Come                   BTS
+Shut Down                     Blackpink
+Hard to Love                  Blackpink
+ULTRAnumb                     Blue Stahli
+Scrape                        Blue Stahli
+Takedown                      Blue Stahli
+Obsidian                      Blue Stahli
+Over You                      Daughtry
+Home                          Daughtry
+Crashed                       Daughtry
+It's Not Over                 Daughtry
+Fur Elise                     Ludwig Van Beethoven
+Moonlight Sonata op. 27 no. 2 Ludwig Van Beethoven
+Waldstein Sonata op. 53       Ludwig Van Beethoven
+Appassionata Sonata op. 57    Ludwig Van Beethoven
+Symphony no. 5 in C Minor     Ludwig Van Beethoven
+Symphony no. 9 in D Minor     Ludwig Van Beethoven
+Ballade no. 4 op. 52          Frederic Chopin
+Etude op. 10 no. 1 in C Major Frederic Chopin
+Etude op. 25 no. 11           Frederic Chopin
+Fantasy in F Minor op. 49     Frederic Chopin
+Nocturne op. 15 no. 2         Frederic Chopin
+Waltz op. 64 no. 2            Frederic Chopin
+Waltz op. 64 no. 1            Frederic Chopin
+Ballade no. 1 op. 13          Frederic Chopin
+Grande Polonaise Brilliante   Frederic Chopin
+Thru These Tears              LANY
+Malibu Nights                 LANY
+Hericane                      LANY
+Super Far                     LANY
+Pink Skies                    LANY
+Take it Easy                  The Eagles
+Hotel California              The Eagles
+New Kid in Town               The Eagles
+Desperado                     The Eagles
+Rosanna                       TOTO
+Africa                        TOTO
+99                            TOTO
+Pamela                        TOTO
+Turning Point                 TOTO
+Evans                         DJ Yoshitaka
+FLOWER                        DJ Yoshitaka
+Lisa-RICCIA                   DJ Yoshitaka
+VALLIS-NERIA                  DJ Yoshitaka
+JOMANDA                       DJ Yoshitaka
+Elisha                        DJ Yoshitaka
+Preserved Valkyria            Penoreri
+Fairy Fair                    Penoreri
+Everlasting Message           Penoreri
+Prayer                        Penoreri
+Sulfur                        Penoreri
+Pumped Up Kicks               Foster The People
+Houdini                       Foster The People
+Call it What You Want         Foster The People
+Warrant                       Foster The People
+Hard Times                    Paramore
+That's What You Get           Paramore
+Misery Business               Paramore
+crushcrushcrush               Paramore
+Ain't It Fun                  Paramore

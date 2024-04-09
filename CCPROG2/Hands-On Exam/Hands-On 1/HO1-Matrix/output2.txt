@@ -1,0 +1,21 @@
+Row and column size: 
+ORIGINAL STRINGS
+mom                 father              
+uncle               auntie              
+
+TRANSPOSED MATRIX
+mom                 uncle               
+father              auntie              
+
+REVERSED STRINGS
+mom                 rehtaf              
+elcnu               eitnua              
+
+PALINDROMES
+1 mom
+
+TOTAL COUNT: 1
+
+VOWELED STRINGS
+1 auntie
+

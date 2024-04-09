@@ -1,0 +1,42 @@
+80808 567
+necklace
+jewelry
+chain with pendant
+12 8080.80
+
+81918 567
+bracelet
+jewelry
+chain with 5 charms
+6 8191.80
+
+68888 567
+ring
+jewelry
+white gold with gems
+12 8080.80
+
+71717 861
+venison
+meat
+lean fillet
+20 700.00
+
+30303 540
+moonrock
+artifact
+natural rock from Mars
+3 100000.00
+
+70007 567
+earrings
+jewelry
+snap-on drop earrings
+5 2000.00
+
+22322 861
+rocksalt
+condiment
+natural sea salt
+500 10.00
+

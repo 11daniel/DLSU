@@ -1,0 +1,56 @@
+cabbage = 0.25 kcal per grams
+beef = 0.00 kcal per grams
+
+There are 2 vegetable in lumpia
+There are 0 nuts in lumpia
+There are 2 protein in adobo
+
+lumpia has total of 191.00 kcal
+adobo has total of 508.40 kcal
+
+Recommended menu items if no egg and mostly protein
+Viand: tofuSisig, total calories = 0.00
+Ingredients:
+  1. 300 grams tofu
+
+
+
+Recommended menu items if no none and mostly protein
+Viand: tofuSisig, total calories = 0.00
+Ingredients:
+  1. 300 grams tofu
+
+
+
+Recommended menu items if no fish and mostly vegetable
+Viand: chopsuey, total calories = 0.00
+Ingredients:
+  1. 150 grams cabbage
+  2. 150 grams carrot
+  3. 100 grams celery
+  4. 50 grams pork
+
+
+
+After tofu category changed to vegetable
+Recommended menu items if no nuts and mostly vegetable
+Viand: lumpia, total calories = 191.00
+Ingredients:
+  1. 100 grams carrot
+  2. 100 grams tofu
+  3. 100 grams cabbage
+  4. 25 grams pork
+
+Viand: tofuSisig, total calories = 0.00
+Ingredients:
+  1. 300 grams tofu
+
+Viand: chopsuey, total calories = 0.00
+Ingredients:
+  1. 150 grams cabbage
+  2. 150 grams carrot
+  3. 100 grams celery
+  4. 50 grams pork
+
+
+
