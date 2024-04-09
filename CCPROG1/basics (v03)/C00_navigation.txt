@@ -1,0 +1,33 @@
+//How to open the commandline?
+
+//Windows
+//1. Go to the directory and select the address bar. Be sure that the
+//   bar is editable. Type in cmd and hit enter.
+//2. Go to the directory and right click the white space of the folder. A
+//   prompt will appear, select open powershell or commandline.
+//3. Press the windows button and type cmd.
+
+// To see all the files in the directory
+// https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/dir
+
+dir
+
+// To see all the files in the directory (Mac and Linux)
+// https://www.unixtutorial.org/basic-unix-commands
+
+ls
+
+// To open a directory 
+// https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/cd
+
+cd <name of directory>
+
+// Example
+
+cd Documents
+
+// to go to an exact file path
+
+cd C:\Documents\MyFileDirectory
+
+
