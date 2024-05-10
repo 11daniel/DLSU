@@ -1,0 +1,40 @@
+-- -----------------------------------------------------
+-- Add records to expense
+-- -----------------------------------------------------  
+
+INSERT INTO expense (expense_id, date_of_expense, expense_desc, program_id, member_incurred_id, endorsement) 
+VALUES 
+(0, '2000-01-29', 'paychecks', 0, 40011, 'T'),
+(1, '2000-02-22', 'utensils', 1, 40012, 'T'),
+(2, '2000-03-05', 'food', 2, 40013, 'T');
+
+-- -----------------------------------------------------
+-- Add records to expense_type
+-- -----------------------------------------------------  
+INSERT INTO expense_type (expense_id, manpower, services, materials, others) 
+VALUES 
+(0, 'TRUE', 'FALSE', 'FALSE', 'TRUE'),
+(1, 'FALSE', 'FALSE', 'TRUE', 'TRUE'),
+(2, 'FALSE', 'FALSE', 'FALSE', 'TRUE');
+
+
+-- -----------------------------------------------------
+-- Add records to addt_budget_request
+-- -----------------------------------------------------  
+INSERT INTO addt_budget_request (request_id, president_id, justification, date_of_request, status, disapproval_reason, committee_member_id)
+VALUES 
+(0, 99901, 'paying ten ppl', '2000-01-01', 'For Approval', NULL, 44011),
+(1, 99901, 'to decorate more', '2000-02-02', 'Approved', NULL, 44012),
+(2, 99901, 'higher-end food', '2000-03-03', 'Disapproved', 'too expensive', 44013);
+
+
+
+-- -----------------------------------------------------
+-- Add records to evidences
+-- -----------------------------------------------------  
+INSERT INTO evidences (evidence_id, program_id, evidence_filename, evidence_pics_docs, submitting_resident_id, accepting_officer_id, date_of_submission)
+VALUES 
+(0, 1, 'programpics', NULL, 40011, 99902, '2000-02-01'),
+(1, 0, 'evidencesprogram', NULL, 40011, 99901, '2000-03-01'),
+(2, 2, 'proofofprogram', NULL, 40012, 99901, '2000-03-25');
+
