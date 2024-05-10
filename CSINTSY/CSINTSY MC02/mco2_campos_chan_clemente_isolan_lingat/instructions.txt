@@ -1,0 +1,10 @@
+CSINTSY S12 GROUP 4
+Members: Campos, Chan, Clemente, Isolan, Lingat
+
+Instructions:
+1. Have Python installed in your system.
+2. Install Git
+3. Install PySWIP using Git by inserting pip install git+https://github.com/yuce/pyswip@master#egg=pyswip into the command line.
+4. Go to the folder directory where the programs are located and type in cmd.
+5. Type in Python chatbot.py and then enter.
+6. Strictly follow the prompts given in the specifications.

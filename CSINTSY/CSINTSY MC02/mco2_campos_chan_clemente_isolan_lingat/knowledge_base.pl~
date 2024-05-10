@@ -1,0 +1,21 @@
+:-dynamic father/2.
+:-dynamic mother/2.
+:-dynamic parent/2.
+:-dynamic child/2.
+:-dynamic aunt/2.
+:-dynamic uncle/2.
+:-dynamic son/2.
+:-dynamic daughter/2.
+:-dynamic male/1.
+:-dynamic female/1.
+:-dynamic sibligs/2.
+
+parent(X,Y):-son(Y,X);daughter(Y,X).
+parent(X,Y):-father(X,Y);mother(X,Y).
+grandfather(X,Z):-father(X,Y),parent(Y,Z).
+grandmother(X,Z):-mother(X,Y),parent(Y,Z).
+child(X,Y):-parent(Y,X).
+aunt(X,Y):-sister(X,A),parent(A,Y).
+uncle(X,Y):-brother(X,A),parent(A,Y).
+siblings(X,Y):-parent(Z,X),parent(Z,Y).
+
