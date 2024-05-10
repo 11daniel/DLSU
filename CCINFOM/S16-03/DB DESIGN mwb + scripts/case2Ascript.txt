@@ -1,0 +1,40 @@
+-- -----------------------------------------------------
+-- Table program
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS program;
+CREATE TABLE IF NOT EXISTS program (
+  program_id INT NOT NULL,
+  hoa_name VARCHAR(45) NOT NULL,
+  program_desc VARCHAR(45), 
+  program_purpose VARCHAR(45) NOT NULL, 
+  program_purpose VARCHAR(45) NOT NULL,
+  maximuno_participants INT NOT NULL,
+  sponsoring_officer_id INT NOT NULL,
+  program_start DATE NOT NULL,
+  program_stop DATE NOT NULL,
+  programreg_start DATE NOT NULL,
+  program_status ENUM('OR', 'CR', 'O', 'CA', CL') NOT NULL,
+  budget FLOAT NOT NULL,
+  INDEX 			(program_id ASC),
+    PRIMARY KEY	(program_id, hoa_name),
+    FOREIGN KEY (hoa_name)
+      REFERENCES hoa(hoa_name) ON DELETE CASCADE
+);
+
+-- -----------------------------------------------------
+-- committee
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS committee;
+CREATE TABLE IF NOT EXISTS committee (
+  commitee_id INT NOT NULL,
+  member_id INT(11) NOT NULL,
+  member_status ENUM('H','M') NOT NULL,
+  program_id INT NOT NULL,
+  organizing_officer_id INT NOT NULL,
+  INDEX 			(program_id ASC),
+    PRIMARY KEY	(committee_id, organizing_officer_id),
+    FOREIGN KEY (member_id)
+      REFERENCES resident(resident_id),
+    FOREIGN KEY (organizing_officer_id)
+      REFERENCES hoa_officer(officer_id) ON DELETE CASCADE
+);
