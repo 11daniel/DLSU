@@ -1,0 +1,9 @@
+Contributions:
+Campos, Annika Dominique S. - Documentation
+Chan, Rizza Mikaella C. - Documentation
+Clemente, Daniel Gavrie Y. - Programmer
+Isolan, Jewel Claire M. - Programmer
+Lingat, Carl Vincent Blix P. - Documentation
+
+Google Colab Link:
+https://colab.research.google.com/drive/1tkmA3JhXN6iJ6gTfYPSngzGd7xRxR6Ge?usp=sharing
