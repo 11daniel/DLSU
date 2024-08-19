@@ -1,0 +1,6 @@
+Ideas so far:
+  - 2D elevator simulator where you have to manually control an elevator to
+reach its destination while avoiding obstacles within a time limit.
+  - RPG idea but with every win you get higher in the sky, final battle at the top, menu based exploration?
+  - Player will have attributes that they can choose to upgrade, directly affects combat capabilities
+  -
