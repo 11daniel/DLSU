@@ -1,0 +1,92 @@
+MasterList[] contents
+12
+-_-
+(-_-)
+(~_~)
+(=_=)
+(>_<)
+(+_+)
+(#_#)
+('_')
+("_")
+(&_&)
+(*_*)
+(^_^)
+
+
+**01-Test-Search()**
+Test=1: search_key=(^_^)  result=11
+Test=2: search_key=(*_*)  result=10
+Test=3: search_key=(&_&)  result=9
+Test=4: search_key=("_")  result=8
+Test=5: search_key=('_')  result=7
+Test=6: search_key=(#_#)  result=6
+Test=7: search_key=(+_+)  result=5
+Test=8: search_key=(>_<)  result=4
+Test=9: search_key=(=_=)  result=3
+Test=10: search_key=(~_~)  result=2
+Test=11: search_key=(-_-)  result=1
+Test=12: search_key=-_-  result=0
+Test= 13: search_key=<ABC>  result=-1
+
+
+**02-Test-Spawn()**
+Test=1: result=1
+Test=2: result=1
+Test=3: result=1
+Test=4: result=1
+Test=5: result=0
+Test=6: result=1
+Test=7: result=1
+Test=8: result=1
+Test=9: result=1
+Test=10: result=1
+Test=11: result=1
+Test=12: result=1
+Test=13: result=1
+Test=14: result=1
+Test=15: result=0
+
+Current-Matrix-Contents
+-_-     (^_^)   (~_~)                   
+("_")           -_-                     
+        (#_#)           (#_#)   (-_-)   
+(>_<)   (*_*)   (^_^)                   
+-_-                     (#_#)           
+
+
+**03-Test-GetMatrixScore()**
+matrix_score=5593
+
+
+**04-Test-FrequencyCount()**
+-_-       3
+(-_-)     1
+(~_~)     1
+(=_=)     0
+(>_<)     1
+(+_+)     0
+(#_#)     3
+('_')     0
+("_")     1
+(&_&)     0
+(*_*)     1
+(^_^)     2
+
+
+**05-Test-Merge()**
+Test=1: result=1
+Test=2: result=1
+Test=3: result=0
+Test=4: result=0
+Test=5: result=0
+Test=6: result=2
+
+Current-Matrix-Contents
+(-_-)   (^_^)   (~_~)                   
+("_")                                   
+        (#_#)                   (-_-)   
+(>_<)   (*_*)   (^_^)                   
+-_-                     ('_')           
+
+

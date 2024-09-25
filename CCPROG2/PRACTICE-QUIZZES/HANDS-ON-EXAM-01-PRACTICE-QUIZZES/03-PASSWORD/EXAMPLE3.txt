@@ -1,0 +1,5 @@
+ik_tar
+ik_tarst
+Ik_Tarst
+Ik_T@rst
+Ik_T@r*?

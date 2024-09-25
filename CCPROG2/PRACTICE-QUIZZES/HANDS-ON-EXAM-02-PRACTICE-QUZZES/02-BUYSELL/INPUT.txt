@@ -1,0 +1,38 @@
+6
+
+20
+
+
+100   ARMAN  AGUILA     3.00
+200   BEN    BASCO      4.50
+300   CARLO  CASTRO     2.75
+400   DANIEL DY         3.25
+500   EFREN  EUSEBIO    4.75
+600   FRED   FALCON     5.00
+
+
+
+100   BAG       5.00
+100   CUTTER    1.65
+100   PAPER     3.25
+100   CLIP      0.75
+200   CRAYON    2.00
+200   PAPER     3.50
+200   ERASER    0.50
+300   PAPER     3.25
+300   CLIP      0.70
+300   BOARD     1.00
+300   ERASER    0.50
+300   PEN       1.75
+400   RULER     1.50
+400   COMPASS  1.50 
+400   PAPER     3.25
+400   PEN       2.00
+500   RULER     1.50
+500   BAG       5.00
+600   CLIP      0.65
+600   PEN       1.75
+
+
+
+
