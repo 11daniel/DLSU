@@ -7,18 +7,18 @@ section .text
 global main
 main:
     ;write your code here
-    GET_HEX 8, rcx
-    mov rax, 0
+    GET_HEX 8, rax
+    xor rbx, rbx
     
     loop1:
-        inc rax
-        SHL qword rcx, 1
+        rol qword rax, 1
         jc done
-        loop loop1
+        inc rbx
+        jnc loop1
         
     done:
         mov [count], rax
-        
-    PRINT_DEC 8, [count]
+        PRINT_DEC 8, [count]
+
     xor rax, rax
     ret
