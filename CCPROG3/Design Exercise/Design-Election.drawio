@@ -1,0 +1,98 @@
+<mxfile host="app.diagrams.net" modified="2023-06-29T11:25:17.321Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="VqUu_tmAMEQx_ELAMqkH" version="21.5.0" type="device">
+  <diagram name="Page-1" id="FiOW6dCiE7SKfmqubBXa">
+    <mxGraphModel dx="1114" dy="890" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="tE7qGKSiPu_YcClZG7lh-1" value="&amp;nbsp;Name: Daniel Gavrie Y. Clemente&lt;div align=&quot;left&quot;&gt;&amp;nbsp;Section: S17A&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="20" y="20" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="tE7qGKSiPu_YcClZG7lh-2" value="Candidate" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="60" y="100" width="240" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="tE7qGKSiPu_YcClZG7lh-3" value="&lt;div&gt;&lt;font color=&quot;#ff6666&quot;&gt;-&lt;/font&gt;&amp;nbsp;name : String&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#ff6666&quot;&gt;-&lt;/font&gt; position : String&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#ff6666&quot;&gt;- votes: int = 0&lt;/font&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="tE7qGKSiPu_YcClZG7lh-2" vertex="1">
+          <mxGeometry y="26" width="240" height="74" as="geometry" />
+        </mxCell>
+        <mxCell id="tE7qGKSiPu_YcClZG7lh-4" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="tE7qGKSiPu_YcClZG7lh-2" vertex="1">
+          <mxGeometry y="100" width="240" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="tE7qGKSiPu_YcClZG7lh-5" value="&lt;div&gt;&lt;font color=&quot;#ff6666&quot;&gt;+ Candidate(name: String, position: String)&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;background-color: initial;&quot; color=&quot;#ff6666&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;background-color: initial;&quot; color=&quot;#ff6666&quot;&gt;+&lt;/font&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;getName () : String&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#ff6666&quot;&gt;+&lt;/font&gt;getPosition () : String&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#ff6666&quot;&gt;+&lt;/font&gt;getNumVotes () : int&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#ff6666&quot;&gt;+&lt;/font&gt;toString () : String&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#ff6666&quot;&gt;+&lt;/font&gt;receivedVote () : void&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="tE7qGKSiPu_YcClZG7lh-2" vertex="1">
+          <mxGeometry y="108" width="240" height="142" as="geometry" />
+        </mxCell>
+        <mxCell id="tE7qGKSiPu_YcClZG7lh-6" value="Votes" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="460" y="90" width="240" height="350" as="geometry" />
+        </mxCell>
+        <mxCell id="tE7qGKSiPu_YcClZG7lh-7" value="&lt;div&gt;&lt;font color=&quot;#ff6666&quot;&gt;-&lt;/font&gt;&amp;nbsp; NAME : String&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#ff6666&quot;&gt;-&lt;/font&gt;&amp;nbsp; ID : String&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#ff6666&quot;&gt;-&lt;/font&gt;&amp;nbsp; dateLastVote : Date&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#ff6666&quot;&gt;- ballot: ArrayList&amp;lt;Ballot&amp;gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#ff6666&quot;&gt;- choices: ArrayList&amp;lt;String&amp;gt;&lt;/font&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="tE7qGKSiPu_YcClZG7lh-6" vertex="1">
+          <mxGeometry y="26" width="240" height="104" as="geometry" />
+        </mxCell>
+        <mxCell id="tE7qGKSiPu_YcClZG7lh-8" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="tE7qGKSiPu_YcClZG7lh-6" vertex="1">
+          <mxGeometry y="130" width="240" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="tE7qGKSiPu_YcClZG7lh-9" value="&lt;div&gt;&lt;font color=&quot;#ff6666&quot;&gt;+ Votes(name: String, id: String, dateLastVote: Date, ballot: Ballot)&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;background-color: initial;&quot; color=&quot;#ff6666&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;background-color: initial;&quot; color=&quot;#ff6666&quot;&gt;+&lt;/font&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;getName () : String&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#ff6666&quot;&gt;+&lt;/font&gt;&amp;nbsp;getID () : String&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#ff6666&quot;&gt;+&lt;/font&gt;&amp;nbsp;getDateLastVoted () : Date&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#ff6666&quot;&gt;+&lt;/font&gt; toString () : String&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#ff6666&quot;&gt;+&lt;/font&gt;&amp;nbsp; hasVotedThisElection () : boolean&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="tE7qGKSiPu_YcClZG7lh-6" vertex="1">
+          <mxGeometry y="138" width="240" height="212" as="geometry" />
+        </mxCell>
+        <mxCell id="tE7qGKSiPu_YcClZG7lh-10" value="Comelec" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="60" y="540" width="240" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="tE7qGKSiPu_YcClZG7lh-11" value="&lt;div&gt;&lt;font color=&quot;#ff6666&quot;&gt;- ballots: ArrayList&amp;lt;Ballot&amp;gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#ff6666&quot;&gt;- candidates: ArrayLIst&amp;lt;Candidate&amp;gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="tE7qGKSiPu_YcClZG7lh-10" vertex="1">
+          <mxGeometry y="26" width="240" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="tE7qGKSiPu_YcClZG7lh-12" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="tE7qGKSiPu_YcClZG7lh-10" vertex="1">
+          <mxGeometry y="80" width="240" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="tE7qGKSiPu_YcClZG7lh-13" value="&lt;div&gt;+ Comelec (&lt;font color=&quot;#ff6666&quot;&gt;ballot: Ballot, candidate: Candidate&lt;/font&gt;)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ setCandidates (c : Candidate []) : void&lt;/div&gt;&lt;div&gt;+ addCandidate(c : Candidate) : void&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ determineWinners () : Candidate []&lt;/div&gt;&lt;div&gt;+ displayVoteTally () : void&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="tE7qGKSiPu_YcClZG7lh-10" vertex="1">
+          <mxGeometry y="88" width="240" height="162" as="geometry" />
+        </mxCell>
+        <mxCell id="tE7qGKSiPu_YcClZG7lh-14" value="Ballot" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="460" y="540" width="240" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="tE7qGKSiPu_YcClZG7lh-15" value="&lt;div&gt;- ID : int&lt;/div&gt;&lt;div&gt;- CANDIDATES : Candidate []&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="tE7qGKSiPu_YcClZG7lh-14" vertex="1">
+          <mxGeometry y="26" width="240" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="tE7qGKSiPu_YcClZG7lh-16" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="tE7qGKSiPu_YcClZG7lh-14" vertex="1">
+          <mxGeometry y="70" width="240" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="tE7qGKSiPu_YcClZG7lh-17" value="&lt;div&gt;+ Ballot (i : int, c : Candidate [])&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ displayVote () : void&lt;/div&gt;&lt;div&gt;+ getVotes () : void&lt;/div&gt;&lt;div&gt;+ getID () : int&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="tE7qGKSiPu_YcClZG7lh-14" vertex="1">
+          <mxGeometry y="78" width="240" height="122" as="geometry" />
+        </mxCell>
+        <mxCell id="bvuYJ1Cew9pTeY1mnTe7-1" value="1--*1" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;entryX=0.846;entryY=0.986;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.329;exitY=0.01;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="tE7qGKSiPu_YcClZG7lh-14" target="tE7qGKSiPu_YcClZG7lh-5">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="270" y="410" as="sourcePoint" />
+            <mxPoint x="250" y="390" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="390" y="480" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bvuYJ1Cew9pTeY1mnTe7-2" value="1--*1" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;entryX=-0.008;entryY=0.451;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="tE7qGKSiPu_YcClZG7lh-13" target="tE7qGKSiPu_YcClZG7lh-17">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="319.9999999999999" y="672.0640000000001" as="sourcePoint" />
+            <mxPoint x="436.88" y="672" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="300" y="672" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bvuYJ1Cew9pTeY1mnTe7-5" value="1--*1" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;startArrow=none;startFill=0;" edge="1" parent="1" source="tE7qGKSiPu_YcClZG7lh-10" target="tE7qGKSiPu_YcClZG7lh-5">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="45.599999999999895" y="455.97" as="sourcePoint" />
+            <mxPoint x="420" y="410" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="110" y="410" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bvuYJ1Cew9pTeY1mnTe7-10" value="1--*1" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;exitX=1.008;exitY=0.613;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="tE7qGKSiPu_YcClZG7lh-9" target="tE7qGKSiPu_YcClZG7lh-17">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="790" y="346" as="sourcePoint" />
+            <mxPoint x="1066" y="540" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="760" y="560" />
+              <mxPoint x="917" y="478" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
