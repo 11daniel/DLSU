@@ -12,7 +12,7 @@ global main
 main:
     mov rbp, rsp; for correct debugging
     ; Display input prompt
-    ;PRINT_STRING input_prompt
+    ; PRINT_STRING input_prompt
 
     ; Read user input into input_buffer (up to 20 characters)
     GET_STRING input_buffer, 20
