@@ -19,7 +19,7 @@ main:
     GET_DEC 8, var1
     GET_DEC 8, var2
     ; Prepare to print user input as ASCII
-    PRINT_STRING "Input Text (in ASCII): "
+    ; PRINT_STRING "Input Text (in ASCII): "
     mov rsi, input_buffer
 
 print_ascii_loop:
@@ -41,7 +41,7 @@ done_ascii:
     NEWLINE
 
     ; Print input as hex
-    PRINT_STRING "Input Text (in HEX): "
+    ; PRINT_STRING "Input Text (in HEX): "
     mov rsi, input_buffer
 
 print_hex_loop:
@@ -101,7 +101,7 @@ done_fib:
     NEWLINE
 
     ; Display generated key in HEX
-    PRINT_STRING "KEY (in Hex): "
+    ; PRINT_STRING "KEY (in Hex): "
     mov rsi, key                 ; Move to key for printing
 
 print_key_hex_loop:
@@ -140,7 +140,7 @@ done_encrypt:
     NEWLINE
 
     ; Display encrypted text in HEX
-    PRINT_STRING "Encrypted Text (in Hex): "
+    ; PRINT_STRING "Encrypted Text (in Hex): "
     mov rsi, input_buffer
 
 print_encrypted_hex_loop:
@@ -156,7 +156,7 @@ done_encrypted_hex:
     NEWLINE
 
     ; Display encrypted text in ASCII
-    PRINT_STRING "Encrypted Text (in ASCII): "
+    ; PRINT_STRING "Encrypted Text (in ASCII): "
     mov rsi, input_buffer
 
 print_encrypted_ascii_loop:
