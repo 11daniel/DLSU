@@ -1,4 +1,4 @@
-; Unisan, Ryu Kisen P. S18
+; Clemente, Daniel Gavrie Y. S18
 %include "io64.inc"
 section .data
     input_string times 200 dd 0
