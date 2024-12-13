@@ -1,1 +1,0 @@
-# LBYARCH_MP2
