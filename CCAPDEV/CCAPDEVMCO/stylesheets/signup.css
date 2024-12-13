@@ -1,0 +1,93 @@
+@import url('https://fonts.cdnfonts.com/css/sf-pro-display');
+
+:root {
+  font-family: 'SF Pro Display', sans-serif;    
+  --dark: #111214;
+  --light: #232428;
+  --white: #F1F6F9;
+  --border: #343536;
+  --color: rgb(70, 73, 104);
+  color: var(--white);
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--dark);
+}
+
+.container {
+  background-color: var(--light);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  text-align: center;
+  color: var(--white);
+}
+
+.create-title {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.login {
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+.login-link {
+  color: var(--color);
+  text-decoration: none;
+}
+
+.login-link:hover {
+  color: #3f3c67;
+}
+
+.signup-input {
+  text-align: left;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-label {
+  font-size: 15px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"], input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--border);
+  background-color: var(--dark);
+  color: var(--white);
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+  border-color: var(--color);
+  outline: none;
+}
+
+button {
+  background-color: var(--color);
+  border: none;
+  border-radius: 10px;
+  color: var(--white);
+  width: 100%;
+  padding: 15px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #3f3c67;
+}

@@ -1,0 +1,141 @@
+@import url('https://fonts.cdnfonts.com/css/sf-pro-display');
+
+:root {
+    --dark: #111214;
+    --light: #232428;
+    --white: #f1f1f1;
+    --dark-blue: #2f3146;
+    --gray-light: #e0e0e0;
+    --gray-medium: #a8a8a8;
+    --gray-dark: #808080;
+    --border: #d0d0d0;
+    --accent: #606060;
+    font-family: 'SF Pro Display', sans-serif;
+    color: var(--dark);
+}
+
+body {
+    margin: 0;
+    background-color: var(--dark);
+}
+
+hr {
+    width: 650px;
+    border: 1px solid var(--border);
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.logo {
+    display: inline-block;
+    background-image: url('../images/logo.png'); /* Ensure the correct path to your image */
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 422px;
+    width: 414px;
+    margin-top: 10px; /* Adjust as needed */
+}
+
+.leftside, .rightside {
+    flex: 1;
+}
+
+.leftside {
+    background-color: var(--gray-light);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.rightside {
+    background-color: var(--dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.forumtitle {
+    text-align: center;
+    margin-right: 50px;
+}
+
+
+.forumdesc {
+    font-size: 20px;
+    color: var(--gray-dark);
+}
+
+.login {
+    width: 80%;
+    text-align: left;
+    background-color: var(--white);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-title {
+    font-size: 30px;
+    color: var(--dark);
+    margin-bottom: 20px;
+}
+
+.signup {
+    font-size: 15px;
+    color: var(--gray-medium);
+    margin-bottom: 30px;
+}
+
+.signup-link {
+    color: var(--accent);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.signup-link:hover {
+    color: var(--dark);
+}
+
+.login-input {
+    margin-top: 20px;
+}
+
+.input-label {
+    font-size: 15px;
+    color: var(--dark);
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    background-color: var(--gray-light);
+}
+
+.remember-label {
+    font-size: 15px;
+    color: var(--dark);
+}
+
+.button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: var(--accent);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: var(--dark);
+}

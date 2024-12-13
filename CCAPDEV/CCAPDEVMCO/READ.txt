@@ -1,0 +1,15 @@
+Github directory: https://github.com/11daniel/CCAPDEVMCO
+
+
+Run procedure:
+cmd the project directory
+
+type npm init -y
+
+then
+npm install hbs mongoose express express-session express-fileupload cookie-parser mongodb connect-mongo
+
+then
+node index.js
+
+open browser, enter localhost:3000 sa search bar
