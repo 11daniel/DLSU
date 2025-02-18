@@ -20,7 +20,7 @@ This README outlines the progression of my Computer Science subjects by academic
   - CSALGCM - Algorithms and Complexity
   - CSINTSY - Introduction to Intelligent Systems
 - Term 2
-  - CCAPDEV - Web Application Development
+  - [CCAPDEV - Web Application Development](CCAPDEV)
   - CSARCH1 - Introduction to Computer Organization and Architecture 1
   - STALGCM - Advanced Algorithms and Complexities
 - Term 3
