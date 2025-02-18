@@ -6,12 +6,12 @@ This README outlines the progression of my Computer Science subjects by academic
 - Term 1
   - [CCPROG1 - Introduction to Programming](CCPROG1)
 - Term 2
-  - [CCPROG2 - Programming with Structured Data Types]
-  - [CCICOMP - Introduction to Computing]
-  - [CCDSTRU - Discrete Structures]
+  - [CCPROG2 - Programming with Structured Data Types](CCPROG2)
+  - CCICOMP - Introduction to Computing
+  - [CCDSTRU - Discrete Structures](CCDSTRU)
 - Term 3
-  - CCPROG3 - Object-Oriented Programming
-  - CCDSALG - Data Structures and Algorithms
+  - [CCPROG3 - Object-Oriented Programming](CCPROG3)
+  - [CCDSALG - Data Structures and Algorithms](CCDSALG)
 
 ## 2nd Year
 - Term 1
