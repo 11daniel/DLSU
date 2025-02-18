@@ -24,7 +24,7 @@ This README outlines the progression of my Computer Science subjects by academic
   - [CSARCH1 - Introduction to Computer Organization and Architecture 1](CSARCH1)
   - STALGCM - Advanced Algorithms and Complexities
 - Term 3
-  - CSSWENG - Software Engineering
+  - CSSWENG - Software Engineering]
   - [CSNETWK - Introduction to Computer Networks](CSNETWK)
   - [CSMODEL - Statiscal Modelling and Simulation](CSMODEL)
 
@@ -49,7 +49,7 @@ This README outlines the progression of my Computer Science subjects by academic
 
 ## Minor in Cybersecurity
 - [ITSECUR - Introduction to Security](ITSECUR)
-- NSCOM01 - Network Application Protocols
+- [NSCOM01 - Network Application Protocols](NSCOM01)
 - NSSECU2 - Advanced and Offensive Security
 - NSSECU3 - Digital Forensics
   
