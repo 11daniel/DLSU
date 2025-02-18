@@ -16,7 +16,7 @@ This README outlines the progression of my Computer Science subjects by academic
 ## 2nd Year
 - Term 1
   - CSADPRG - Advanced Programming and Theory of Programming Languages
-  - CCINFOM - Information Management
+  - [CCINFOM - Information Management])(CCINFOM)
   - CSALGCM - Algorithms and Complexity
   - CSINTSY - Introduction to Intelligent Systems
 - Term 2
