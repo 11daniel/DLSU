@@ -3,21 +3,29 @@
 This README outlines the progression of my Computer Science subjects by academic year.
 
 ## 1st Year
-- CCPROG1 - Introduction to Programming
-- CCPROG2 - Intermediate Programming
-- CCPROG3 - Advanced Programming
+- - CCPROG1 - Introduction to Programming
+- CCPROG2 - Programming with Structured Data Types
+- CCICOMP - Introduction to Computing
+- CCDSTRU - Discrete Structures
+- CCPROG3 - Object-Oriented Programming
+- CCDSALG - Data Structures and Algorithms
 
 ## 2nd Year
-- CSADPRG - Advanced Data Structures and Programming
+- CSADPRG - Advanced Programming and Theory of Programming Languages
 - CCINFOM - Information Management
-- CCAPDEV - Application Development
+- CSALGCM - Algorithms and Complexity
+- CSINTSY - Introduction to Intelligent Systems
+- CCAPDEV - Web Application Development
 - CSARCH1 - Computer Architecture 1
+- STALGCM
+- CSSWENG - Software Engineering
+- CSNETWK - Computer Networks
+- CSMODEL
 
 ## 3rd Year
 - CSDATABASE - Database Systems
 - CSNETWK - Computer Networks
 - CSMATH - Discrete Mathematics
-- OOPDEV - Object-Oriented Programming
 
 ## 4th Year
 - CSMACHINE - Machine Learning
