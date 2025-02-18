@@ -14,32 +14,43 @@ This README outlines the progression of my Computer Science subjects by academic
   - CCDSALG - Data Structures and Algorithms
 
 ## 2nd Year
-- CSADPRG - Advanced Programming and Theory of Programming Languages
-- CCINFOM - Information Management
-- CSALGCM - Algorithms and Complexity
-- CSINTSY - Introduction to Intelligent Systems
-- CCAPDEV - Web Application Development
-- CSARCH1 - Computer Architecture 1
-- STALGCM
-- CSSWENG - Software Engineering
-- CSNETWK - Computer Networks
-- CSMODEL
+- Term 1
+  - CSADPRG - Advanced Programming and Theory of Programming Languages
+  - CCINFOM - Information Management
+  - CSALGCM - Algorithms and Complexity
+  - CSINTSY - Introduction to Intelligent Systems
+- Term 2
+  - CCAPDEV - Web Application Development
+  - CSARCH1 - Introduction to Computer Organization and Architecture 1
+  - STALGCM - Advanced Algorithms and Complexities
+- Term 3
+  - CSSWENG - Software Engineering
+  - CSNETWK - Introduction to Computer Networks
+  - CSMODEL - Statiscal Modelling and Simulation
 
 ## 3rd Year
-- CSDATABASE - Database Systems
-- CSNETWK - Computer Networks
-- CSMATH - Discrete Mathematics
+- Term 1
+  - STSWENG - Advanced Software Engineering
+  - STADVDB - Advanced Database Systems
+  - CSARCH2 - Introduction to Computer Organization and Architecture 2
+  - LBYARCH - Laboratory for Computer Organization and Architecture
+  - DSGNPAT - Design Patterns
+- Term 2
+  - STINTSY - Advanced Intelligent Systems
+  - SOLLPM1 - Project Management 1
+- Term 3
+  - STCLOUD - Introduction to Cloud Computing
+  - CSOPESY - Introduction to Operating Systems
 
 ## 4th Year
-- CSMACHINE - Machine Learning
-- CSGRAPHICS - Computer Graphics
-- CSSECUR - Cybersecurity Fundamentals
-- CAPSTONE - Capstone Project
+- CCINOV8 - Innovation and Technology Management
+- STDISCM - Discrete Computing
+- CSSECDV - Secure Web Development
 
 ## Minor in Cybersecurity
-- ITSECUR
-- NSCOM01
-- NSSECU2
-- NSSECU3
+- ITSECUR - Introduction to Security
+- NSCOM01 - Introduction to Security 1
+- NSSECU2 - Advanced and Offensive Security 2
+- NSSECU3 - Advanced and Offensive Security 3
   
 This document serves as a roadmap for my learning journey in Computer Science, highlighting key subjects covered each year.
