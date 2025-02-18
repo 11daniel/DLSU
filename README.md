@@ -49,8 +49,8 @@ This README outlines the progression of my Computer Science subjects by academic
 
 ## Minor in Cybersecurity
 - ITSECUR - Introduction to Security
-- NSCOM01 - Introduction to Security 1
-- NSSECU2 - Advanced and Offensive Security 2
-- NSSECU3 - Advanced and Offensive Security 3
+- NSCOM01 - Network Application Protocols
+- NSSECU2 - Advanced and Offensive Security
+- NSSECU3 - Digital Forensics
   
 This document serves as a roadmap for my learning journey in Computer Science, highlighting key subjects covered each year.
