@@ -1,4 +1,4 @@
-# Computer Science Journey
+# BS Computer Science Major in Software Technology with a Minor in Cybersecurity Journey
 
 This README outlines the progression of my Computer Science subjects by academic year.
 
@@ -25,4 +25,10 @@ This README outlines the progression of my Computer Science subjects by academic
 - CSSECUR - Cybersecurity Fundamentals
 - CAPSTONE - Capstone Project
 
-This document serves as a roadmap of my learning journey in Computer Science, highlighting key subjects covered each year.
+## Minor in Cybersecurity
+- ITSECUR
+- NSCOM01
+- NSSECU2
+- NSSECU3
+  
+This document serves as a roadmap for my learning journey in Computer Science, highlighting key subjects covered each year.
