@@ -1,13 +1,13 @@
 import java.io.*;
 import java.net.*;
-import java.nio.file.Files;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class nscom {
+public class nscom1 {
     private static final int TFTP_PORT = 69;
-    private static final int DEFAULT_BLOCK_SIZE = 512;
-    private static final int TIMEOUT = 10000;
+    private static int blockSize = 512;
+    private static int timeout = 10000;
+    private static int tsize;
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -15,11 +15,18 @@ public class nscom {
         System.out.print("Enter TFTP Server IP Address: ");
         String serverIP = scanner.nextLine();
 
+        System.out.print("Enter block size (default 512): ");
+        blockSize = scanner.nextInt();
+
+        System.out.print("Enter timeout in milliseconds (default 10000): ");
+        timeout = scanner.nextInt();
+        scanner.nextLine(); // Consume newline
+
         while (true) {
             showMenu();
             System.out.print("Select an option: ");
             String choice = scanner.nextLine();
-            
+
             switch (choice) {
                 case "1":
                     System.out.print("Enter remote file to download: ");
@@ -28,7 +35,7 @@ public class nscom {
                     String localFile = scanner.nextLine();
                     handleDownload(serverIP, localFile, remoteFile);
                     break;
-                
+
                 case "2":
                     System.out.print("Enter local file to upload: ");
                     localFile = scanner.nextLine();
@@ -36,12 +43,12 @@ public class nscom {
                     remoteFile = scanner.nextLine();
                     handleUpload(serverIP, localFile, remoteFile);
                     break;
-                
+
                 case "3":
                     System.out.println("Exiting...");
                     scanner.close();
                     return;
-                
+
                 default:
                     System.out.println("Invalid choice. Please try again.");
                     break;
@@ -58,7 +65,7 @@ public class nscom {
 
     private static void handleDownload(String serverIP, String localFile, String remoteFile) {
         try (DatagramSocket socket = new DatagramSocket()) {
-            socket.setSoTimeout(TIMEOUT);
+            socket.setSoTimeout(timeout);
             if (new File(localFile).exists()) {
                 System.out.println("Error: File " + localFile + " already exists. Preventing overwrite.");
                 return;
@@ -71,7 +78,7 @@ public class nscom {
 
     private static void handleUpload(String serverIP, String localFile, String remoteFile) {
         try (DatagramSocket socket = new DatagramSocket()) {
-            socket.setSoTimeout(TIMEOUT);
+            socket.setSoTimeout(timeout);
             if (!new File(localFile).exists()) {
                 System.out.println("Error: File " + localFile + " does not exist.");
                 return;
@@ -158,7 +165,7 @@ public class nscom {
             dos.writeByte(0);
             dos.write("blksize".getBytes());
             dos.writeByte(0);
-            dos.write(String.valueOf(DEFAULT_BLOCK_SIZE).getBytes());
+            dos.write(String.valueOf(blockSize).getBytes());
             dos.writeByte(0);
         } catch (IOException e) {
             e.printStackTrace();
@@ -205,7 +212,7 @@ public class nscom {
 
     private static void sendFile(DatagramSocket socket, FileInputStream fis, InetAddress serverAddress, int serverPort)
             throws IOException {
-        byte[] buffer = new byte[512];
+        byte[] buffer = new byte[blockSize];
         int bytesRead;
         int blockNumber = 1;
 
@@ -282,20 +289,32 @@ public class nscom {
     }
 
     private static byte[] createWriteRequestPacket(String filename, String mode) {
-        ByteArrayOutputStream byteStream = new ByteArrayOutputStream();
-        DataOutputStream dos = new DataOutputStream(byteStream);
+        ByteArrayOutputStream bos = new ByteArrayOutputStream();
+        DataOutputStream dos = new DataOutputStream(bos);
 
         try {
-            dos.writeShort(2); // Opcode for WRQ (Write Request)
-            dos.writeBytes(filename);
-            dos.writeByte(0); // Null terminator for filename
-            dos.writeBytes(mode);
-            dos.writeByte(0); // Null terminator for mode
+            dos.writeShort(2); // WRQ (Write Request)
+            dos.write(filename.getBytes());
+            dos.writeByte(0);
+            dos.write(mode.getBytes());
+            dos.writeByte(0);
+            dos.write("blksize".getBytes());
+            dos.writeByte(0);
+            dos.write(String.valueOf(blockSize).getBytes());
+            dos.writeByte(0);
+            dos.write("tsize".getBytes());
+            dos.writeByte(0);
+            dos.write(String.valueOf(new File(filename).length()).getBytes());
+            dos.writeByte(0);
+
+            File file = new File(filename);
+            dos.write(String.valueOf(file.length()).getBytes()); // Send file size
+            dos.writeByte(0);
         } catch (IOException e) {
             e.printStackTrace();
         }
 
-        return byteStream.toByteArray();
+        return bos.toByteArray();
     }
 
 }
