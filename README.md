@@ -24,7 +24,7 @@ This README outlines the progression of my Computer Science subjects by academic
   - [CSARCH1 - Introduction to Computer Organization and Architecture 1](CSARCH1)
   - [STALGCM - Advanced Algorithms and Complexities](STALGCM)
 - Term 3
-  - CSSWENG - Software Engineering]
+  - [CSSWENG - Software Engineering](CSSWENG)
   - [CSNETWK - Introduction to Computer Networks](CSNETWK)
   - [CSMODEL - Statiscal Modelling and Simulation](CSMODEL)
 
