@@ -34,7 +34,7 @@ This README outlines the progression of my Computer Science subjects by academic
   - STADVDB - Advanced Database Systems
   - CSARCH2 - Introduction to Computer Organization and Architecture 2
   - [LBYARCH - Laboratory for Computer Organization and Architecture](LBYARCH)
-  - [DSGNPAT - Design Patterns]()
+  - [DSGNPAT - Design Patterns](DSGNPAT)
 - Term 2
   - STINTSY - Advanced Intelligent Systems
   - SOLLPM1 - Project Management 1
