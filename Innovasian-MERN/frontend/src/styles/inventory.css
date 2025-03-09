@@ -1,0 +1,764 @@
+/* @inventory.css */
+
+@import 'variables.css';
+
+body {
+  font-family: 'Arial', sans-serif;
+  text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.5);
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+}
+
+.logo {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+}
+
+.sidebar {
+  width: 250px;
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+  color: white;
+  height: 100vh;
+  position: fixed;
+  padding: 20px 0;
+  transition: width 0.3s ease;
+  overflow-y: auto;
+}
+
+.sidebar::-webkit-scrollbar {
+  display: none;
+}
+
+.sidebar {
+  scrollbar-width: none;
+}
+
+.brand {
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.hamburger {
+  font-size: 24px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu a {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.menu a .icon {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.menu a .text {
+  display: inline;
+}
+
+.menu a:hover,
+.menu a.active {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.submenu {
+  max-height: 0;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  transition: max-height 0.3s ease-out;
+}
+
+.menu li.active .submenu {
+  max-height: 200px;
+  transition: max-height 0.3s ease-in;
+}
+
+.main-content {
+  margin-left: 250px;
+  padding: 20px;
+  flex: 1;
+  transition: margin-left 0.3s ease;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: var(--secondary-color);
+  color: white;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-content input[type="text"] {
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  font-size: 14px;
+  min-width: 250px;
+  background-color: white;
+  color: var(--text-color);
+}
+
+.header-content input[type="text"]:focus {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 5px rgba(245, 121, 9, 0.5);
+}
+
+.add-new-item-button {
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+}
+
+.add-new-item-button:hover {
+  background-color: var(--primary-color);
+}
+
+.add-item-card {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+
+.add-item-card h2 {
+  color: #333;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.add-item-card form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.add-item-card .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-item-card .description-group {
+  grid-column: span 3;
+  color: #333;
+}
+
+.add-item-card label {
+  color: #333 !important;
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  display: block;
+}
+
+.add-item-card input,
+.add-item-card select,
+.add-item-card textarea {
+  padding: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.9); /* Changed to lighter background */
+  color: #333; /* Dark text color */
+}
+
+.add-item-card select {
+  color: #333; /* Ensures dropdown text is dark */
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.add-item-card select option {
+  background-color: white;
+  color: #333;
+}
+
+.add-item-card input::placeholder,
+.add-item-card textarea::placeholder {
+  color: #666;
+}
+
+.add-item-card button[type="submit"] {
+  grid-column: span 3;
+  background-color: var(--accent-color);
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+
+.add-item-card button[type="submit"]:hover {
+  background-color: var(--primary-color);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.add-item-card button[type="submit"]:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.add-item-card h2 {
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.add-item-card label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: white; /* Keep labels white for contrast */
+  font-size: 0.9rem;
+}
+
+.add-item-card input,
+.add-item-card select,
+.add-item-card textarea {
+  width: 100%;
+  padding: 12px 16px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.add-item-card input:focus,
+.add-item-card select:focus,
+.add-item-card textarea:focus {
+  border-color: var(--primary-color);
+  outline: none;
+}
+
+.add-item-card textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.add-item-button {
+  background-color: var(--accent-color);
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.add-item-button:hover {
+  background-color: var(--primary-color);
+}
+
+.add-item-card {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.add-item-card h2 {
+  color: var(--secondary-color);
+  margin-bottom: 15px;
+}
+
+.add-item-card label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.add-item-card input,
+.add-item-card select,
+.add-item-card textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.add-item-card input:focus,
+.add-item-card select:focus,
+.add-item-card textarea:focus {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 5px rgba(245, 121, 9, 0.5);
+}
+
+.inventory-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.filters {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.filters select,
+.filters input[type="number"] {
+  padding: 10px;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  font-size: 16px;
+  margin-right: 10px;
+  transition: border-color 0.3s ease;
+}
+
+.filters select:focus,
+.filters input[type="number"]:focus {
+  border-color: var(--secondary-color);
+  box-shadow: 0 0 5px rgba(245, 121, 9, 0.5);
+}
+
+.inventory-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.inventory-table th,
+.inventory-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid var(--primary-color);
+}
+
+.inventory-table th {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.inventory-table tr:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.edit-btn,
+.delete-btn {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 5px;
+}
+
+.edit-btn:hover,
+.delete-btn:hover {
+  background-color: var(--accent-color);
+}
+
+.quantity-button {
+  background-color: var(--accent-color);
+  border: none;
+  color: #fff;
+  padding: 5px 10px;
+  margin: 0 2px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.quantity-button:hover {
+  background-color: var(--primary-color);
+}
+
+/* Styles for the table input fields */
+.inventory-table input[type="text"],
+.inventory-table input[type="number"],
+.inventory-table select {
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+  border: 1px solid var(--primary-color);
+  border-radius: 3px;
+}
+
+.inventory-table input[disabled] {
+  background-color: #f9f9f9;
+  color: #555;
+}
+
+/* Styles for action buttons */
+.edit-btn,
+.save-btn,
+.cancel-btn,
+.delete-btn {
+  background-color: var(--accent-color);
+  color: #fff;
+  border: none;
+  padding: 5px 8px;
+  margin: 2px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.edit-btn:hover,
+.save-btn:hover,
+.cancel-btn:hover,
+.delete-btn:hover {
+  background-color: var(--primary-color);
+}
+
+.cancel-btn {
+  background-color: #6c757d;
+}
+
+.cancel-btn:hover {
+  background-color: #5a6268;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.export-csv-button {
+  background-color: #5a8b5d!important;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+}
+
+.export-csv-button:hover {
+  background-color: #4a7a4d;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 60px;
+  }
+
+  .main-content {
+    margin-left: 60px;
+  }
+
+  .header-content {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .header-content input[type="text"] {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .add-new-item-button {
+    width: 100%;
+  }
+
+  .filters {
+    flex-wrap: wrap;
+  }
+
+  .filters select,
+  .filters input[type="number"] {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .add-item-card {
+    max-width: none;
+    padding: 15px;
+  }
+
+  .inventory-table {
+    font-size: 12px;
+  }
+
+  .edit-btn,
+  .save-btn,
+  .cancel-btn,
+  .delete-btn {
+    padding: 4px 6px;
+    font-size: 12px;
+  }
+
+  .button-group {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .export-csv-button {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .add-item-card {
+    padding: 20px;
+    margin: 10px;
+  }
+
+  .add-item-card h2 {
+    font-size: 1.5em;
+  }
+}
+
+/* Dark mode styles for tables */
+body.dark-mode .inventory-table,
+body.dark-mode .orders-table,
+body.dark-mode .categories-table {
+    background-color: var(--dark-card-bg);
+    color: var(--dark-text);
+}
+
+body.dark-mode .inventory-table th,
+body.dark-mode .orders-table th,
+body.dark-mode .categories-table th {
+    background-color: var(--dark-card-bg);
+    color: var(--dark-text);
+    border-bottom: 1px solid var(--dark-border);
+}
+
+body.dark-mode .inventory-table td,
+body.dark-mode .orders-table td,
+body.dark-mode .categories-table td {
+    border-bottom: 1px solid var(--dark-border);
+}
+
+/* Dark mode styles for cards */
+body.dark-mode .card {
+    background-color: var(--dark-card-bg);
+    color: var(--dark-text);
+    border: 1px solid var(--dark-border);
+}
+
+/* Dark mode styles for inputs */
+body.dark-mode input,
+body.dark-mode select,
+body.dark-mode textarea {
+    background-color: var(--dark-card-bg);
+    color: var(--dark-text);
+    border: 1px solid var(--dark-border);
+}
+
+body.dark-mode input::placeholder,
+body.dark-mode textarea::placeholder {
+    color: #888;
+}
+
+/* Dark mode styles for buttons */
+body.dark-mode button {
+    background-color: var(--primary-color);
+    color: var(--dark-text);
+}
+
+body.dark-mode button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Popup Styles */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.confirmation-popup {
+  background-color: var(--card-bg);
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 90%;
+  animation: slideIn 0.3s ease-out;
+}
+
+.confirmation-popup h3 {
+  color: var(--text-color);
+  margin-bottom: 15px;
+}
+
+.confirmation-popup p {
+  margin-bottom: 20px;
+  color: var(--text-color);
+}
+
+.popup-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.popup-buttons button {
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.popup-buttons .confirm-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.popup-buttons .confirm-btn:hover {
+  background-color: #c82333;
+}
+
+.success-popup {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: var(--success-color, #28a745);
+  color: white;
+  padding: 15px 25px;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  animation: slideIn 0.3s ease-out;
+  z-index: 1000;
+}
+
+/* Dark mode styles */
+body.dark-mode .confirmation-popup {
+  background-color: var(--dark-card-bg);
+}
+
+body.dark-mode .confirmation-popup h3,
+body.dark-mode .confirmation-popup p {
+  color: var(--dark-text);
+}
+
+@keyframes slideIn {
+  from {
+      transform: translateY(-20px);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+/* Dark mode styles for add item form */
+body.dark-mode .add-item-card {
+    background-color: var(--dark-card-bg);
+    color: var(--dark-text);
+    border: 1px solid var(--dark-border);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .add-item-card h2 {
+    color: var(--dark-text);
+}
+
+body.dark-mode .add-item-card label {
+    color: var(--dark-text) !important;
+}
+
+body.dark-mode .add-item-card input,
+body.dark-mode .add-item-card select,
+body.dark-mode .add-item-card textarea {
+    background-color: var(--dark-input-bg);
+    color: var(--dark-text);
+    border-color: var(--dark-border);
+}
+
+body.dark-mode .add-item-card input:focus,
+body.dark-mode .add-item-card select:focus,
+body.dark-mode .add-item-card textarea:focus {
+    border-color: var(--dark-accent);
+    box-shadow: 0 0 5px rgba(255, 143, 60, 0.2);
+}
+
+body.dark-mode .add-item-card select option {
+    background-color: var(--dark-input-bg);
+    color: var(--dark-text);
+}
+
+body.dark-mode .add-item-card button[type="submit"] {
+    background-color: var(--dark-accent);
+    color: var(--dark-text);
+}
+
+body.dark-mode .add-item-card button[type="submit"]:hover {
+    background-color: var(--dark-secondary);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Dark mode styles for edit form */
+body.dark-mode .inventory-table input[type="text"],
+body.dark-mode .inventory-table input[type="number"],
+body.dark-mode .inventory-table select {
+    background-color: var(--dark-input-bg);
+    color: var(--dark-text);
+    border-color: var(--dark-border);
+}
+
+body.dark-mode .inventory-table input[disabled] {
+    background-color: var(--dark-card-bg);
+    color: var(--dark-text);
+    opacity: 0.7;
+}
+
+/* Success popup in dark mode */
+body.dark-mode .success-popup {
+    background-color: var(--dark-success);
+    color: var(--dark-text);
+}
