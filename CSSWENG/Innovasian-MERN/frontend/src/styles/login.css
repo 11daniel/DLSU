@@ -1,0 +1,245 @@
+@import 'variables.css';
+@import 'reset.css';
+
+.login-container {
+    display: flex;
+    height: 100vh;
+    transition: all 0.3s ease;
+}
+
+.branding-section {
+    flex: 1;
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+}
+
+.branding-content {
+    text-align: center;
+}
+
+.branding-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.branding-content p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+    opacity: 0.9;
+}
+
+.form-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color);
+    padding: 2em;
+    transition: background-color 0.3s ease;
+}
+
+.login-form {
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    padding: 2em;
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.login-form h2 {
+    color: var(--text-color);
+    margin-bottom: 0.5em;
+    font-size: 2em;
+}
+
+.login-form p {
+    color: var(--text-color);
+    margin-bottom: 2em;
+    opacity: 0.8;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 1em;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    font-size: 1em;
+    transition: all 0.3s ease;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.login-form input:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(245, 121, 9, 0.2);
+    outline: none;
+}
+
+.login-form button {
+    width: 100%;
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 1em;
+}
+
+.login-form button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.login-form a.forgot-password {
+    display: block;
+    margin-top: 1.5em;
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.login-form a.forgot-password:hover {
+    color: var(--secondary-color);
+}
+
+.error-popup {
+    display: none;
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #FFCCCB;
+    padding: 1.5em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    text-align: center;
+}
+
+.error-popup.active {
+    display: block;
+    animation: fadeIn 0.5s ease-out;
+}
+
+.error-popup p {
+    margin: 0 0 1em;
+    font-size: 1.2em;
+    color: #A01365;
+}
+
+.error-popup button {
+    background-color: #F57909;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.error-popup button:hover {
+    background-color: #FC450C;
+}
+
+/* Dark mode styles for tables */
+body.dark-mode .inventory-table,
+body.dark-mode .orders-table,
+body.dark-mode .categories-table {
+    background-color: var(--dark-card-bg);
+    color: var(--dark-text);
+}
+
+body.dark-mode .inventory-table th,
+body.dark-mode .orders-table th,
+body.dark-mode .categories-table th {
+    background-color: var(--dark-card-bg);
+    color: var(--dark-text);
+    border-bottom: 1px solid var(--dark-border);
+}
+
+body.dark-mode .inventory-table td,
+body.dark-mode .orders-table td,
+body.dark-mode .categories-table td {
+    border-bottom: 1px solid var(--dark-border);
+}
+
+/* Dark mode styles for cards */
+body.dark-mode .card {
+    background-color: var(--dark-card-bg);
+    color: var(--dark-text);
+    border: 1px solid var(--dark-border);
+}
+
+/* Dark mode styles for inputs */
+body.dark-mode input,
+body.dark-mode select,
+body.dark-mode textarea {
+    background-color: var(--dark-card-bg);
+    color: var(--dark-text);
+    border: 1px solid var(--dark-border);
+}
+
+body.dark-mode input::placeholder,
+body.dark-mode textarea::placeholder {
+    color: #888;
+}
+
+/* Dark mode styles for buttons */
+body.dark-mode button {
+    background-color: var(--primary-color);
+    color: var(--dark-text);
+}
+
+body.dark-mode button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Dark Mode Styles */
+body.dark-mode .form-section {
+    background-color: var(--dark-background);
+}
+
+body.dark-mode .login-form {
+    background-color: var(--dark-card-bg);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .login-form h2,
+body.dark-mode .login-form p {
+    color: var(--dark-text);
+}
+
+body.dark-mode .login-form input {
+    background-color: var(--dark-input-bg);
+    color: var(--dark-text);
+    border-color: var(--dark-border);
+}
+
+body.dark-mode .login-form input:focus {
+    border-color: var(--dark-accent);
+    box-shadow: 0 0 0 2px rgba(255, 143, 60, 0.2);
+}
+
+body.dark-mode .login-form button {
+    background: linear-gradient(45deg, var(--dark-accent), var(--dark-secondary));
+}
+
+body.dark-mode .login-form a.forgot-password {
+    color: var(--dark-accent);
+}
+
+body.dark-mode .login-form a.forgot-password:hover {
+    color: var(--dark-secondary);
+}
