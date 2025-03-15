@@ -37,7 +37,7 @@ This README outlines the progression of my Computer Science subjects by academic
   - [DSGNPAT - Design Patterns](DSGNPAT)
 - Term 2
   - STINTSY - Advanced Intelligent Systems
-  - SOLLPM1 - Project Management 1
+  - [SOLLPM1 - Project Management 1](SOLLPM1)
 - Term 3
   - STCLOUD - Introduction to Cloud Computing
   - CSOPESY - Introduction to Operating Systems
