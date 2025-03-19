@@ -43,9 +43,11 @@ This README outlines the progression of my Computer Science subjects by academic
   - CSOPESY - Introduction to Operating Systems
 
 ## 4th Year
-- CCINOV8 - Innovation and Technology Management
-- STDISCM - Discrete Computing
-- CSSECDV - Secure Web Development
+- Term 1
+  - CCINOV8 - Innovation and Technology Management
+  - STDISCM - Discrete Computing
+- Term 2
+  - CSSECDV - Secure Web Development
 
 ## Minor in Cybersecurity
 - [ITSECUR - Introduction to Security](ITSECUR)
