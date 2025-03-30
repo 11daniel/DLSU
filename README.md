@@ -36,7 +36,7 @@ This README outlines the progression of my Computer Science subjects by academic
   - [LBYARCH - Laboratory for Computer Organization and Architecture](LBYARCH)
   - [DSGNPAT - Design Patterns](DSGNPAT)
 - Term 2
-  - STINTSY - Advanced Intelligent Systems
+  - [STINTSY - Advanced Intelligent Systems](STINTSY)
   - [SOLLPM1 - Project Management 1](SOLLPM1)
 - Term 3
   - STCLOUD - Introduction to Cloud Computing
