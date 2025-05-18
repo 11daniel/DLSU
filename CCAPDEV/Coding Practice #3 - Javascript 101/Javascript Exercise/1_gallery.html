@@ -1,0 +1,64 @@
+<!--BTW, THE CAPS LOCK WAS BUSTED WHEN I BASED THIS CODE. SORRY, ART :(
+-->
+<HTML>
+<HEAD>
+	<!--TODO: Fill these codes up with the proper images-->
+<SCRIPT>
+
+// TODO: Fill up with the correct codes
+function showFirstImage()
+{
+	// Your code here:
+	document.images['imagePanel'].src = 'cat1.jpg'; //displays img and when button is clicked and id is found
+	document.forms['statusForm']['statusText'].value = 'cat1'; // displays caption in text box
+}
+
+function showSecondImage()
+{
+	// Your code here:
+	document.images['imagePanel'].src = 'cat2.jpg';
+	document.forms['statusForm']['statusText'].value = 'cat2';
+}
+
+function showThirdImage()
+{
+	// Your code here:
+	document.images['imagePanel'].src = 'cat3.jpg';
+	document.forms['statusForm']['statusText'].value = 'cat3';
+}
+
+</SCRIPT>
+
+	<TITLE>CCAPDEV - Javascript Exercise</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF">
+
+<img src="blank.png" id="imagePanel">
+
+<!-- RIP CAPS LOCK AT THIS POINT XD -->
+<FORM METHOD=POST ACTION="none" NAME="statusForm">
+	<INPUT TYPE=text NAME="statusText" SIZE=10 id="textHere">
+</FORM>
+<TABLE BORDER=0>
+	<TR>
+		<TD>
+			<FORM>
+				<INPUT TYPE=button NAME="firstImage" onClick="showFirstImage()" VALUE="First Image">
+			</FORM>
+		</TD>
+		<TD>
+			<FORM>
+				<INPUT TYPE=button NAME="secondImage" onClick="showSecondImage()" VALUE="Second Image">
+			</FORM>
+		</TD>
+		<TD>
+			<FORM>
+				<INPUT TYPE=button NAME="thirdImage" onClick="showThirdImage()" VALUE="Third Image">
+			</FORM>
+		</TD>
+	</TR>
+</TABLE>
+
+</BODY>
+</HTML>

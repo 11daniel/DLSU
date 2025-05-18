@@ -1,0 +1,39 @@
+<html>
+
+<head>
+</head>
+
+<body>
+	<h1 id="YourMove">Your move: NONE</h1>
+	<h1 id="OpponentMove">Opponent's move: NONE</h1>
+	<p>
+		<button type="button" onclick="play('rock')">Rock</button>
+		<button type="button" onclick="play('paper')">Paper</button>
+		<button type="button" onclick="play('scissors')">Scissors</button>
+	<p>
+
+	<h2 id="Verdict">Verdict = NONE</h2>
+	<script>
+		function play(playerMove) {
+			var moves = ['rock', 'paper', 'scissors'];
+			var opponentMove = moves[Math.floor(Math.random() * moves.length)];
+
+			document.getElementById('YourMove').innerHTML = 'Your move: ' + playerMove;
+			document.getElementById('OpponentMove').innerHTML = "Opponent's move: " + opponentMove;
+
+			if (playerMove === opponentMove) {
+				document.getElementById('Verdict').innerHTML = 'Verdict = Tie';
+			} else if (
+				(playerMove === 'rock' && opponentMove === 'scissors') ||
+				(playerMove === 'paper' && opponentMove === 'rock') ||
+				(playerMove === 'scissors' && opponentMove === 'paper')
+			) {
+				document.getElementById('Verdict').innerHTML = 'Verdict = You win';
+			} else {
+				document.getElementById('Verdict').innerHTML = 'Verdict = You lose';
+			}
+		}
+	</script>
+</body>
+
+</html>

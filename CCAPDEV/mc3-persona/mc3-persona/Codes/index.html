@@ -1,0 +1,114 @@
+
+<!-- saved from url=(0014)about:internet -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+
+
+		<title>Mini Challenge #3: Who's the best phantom thief dancer?</title>
+
+	
+</head>
+<body style="background-color:rgb(217,35,35);" class="">
+	<div class="container" style="width:100%">
+	
+	<center>
+	<img id="logo" src="./images/persona5.png" height="250px"><br>
+	<h2 style="color:white;">Who is the best phantom thief dancer?</p>
+	<img id="renAmamiya" src="./images/ren.webp" onclick="selectVote('ren')"  onMouseOver="this.style.cursor='pointer'" style="height:130px; width:auto;">
+	<img id="ryujiSakamoto" src="./images/ryuji.webp" onclick="selectVote('ryuji');" onMouseOver="this.style.cursor='pointer'" style="height:130px; width:auto;">
+	<img id="annTakamaki" src="./images/ann.webp" onclick="selectVote('ann')" onMouseOver="this.style.cursor='pointer'" style="height:130px; width:auto;">
+	<img id="makotoNiijima" src="./images/makoto.webp" onclick="selectVote('makoto')" onMouseOver="this.style.cursor='pointer'" style="height:130px; width:auto;">
+	<img id="yusukeKitagawa" src="./images/yusuke.webp" onclick="selectVote('yusuke')" onMouseOver="this.style.cursor='pointer'" style="height:130px; width:auto;">
+	<img id="futabaSakura" src="./images/futaba.webp" onclick="selectVote('futaba')" onMouseOver="this.style.cursor='pointer'" style="height:130px; width:auto;">
+	<img id="haruOkumura" src="./images/haru.webp" onclick="selectVote('haru')" onMouseOver="this.style.cursor='pointer'" style="height:130px; width:auto;">
+	<img id="morgana" src="./images/morgana.webp" onclick="selectVote('morgana')" onMouseOver="this.style.cursor='pointer'" style="height:130px; width:auto;">
+
+	<br><br>
+
+	<hr>
+	<h1 style="color:white;" id="namePlate"> Cast your vote now! Click someone from above! </h1>
+	<iframe id="player_vote" width="560" height="315"  title="YouTube video player" frameborder="0" referrerpolicy="no-referrer-when-downgrade"></iframe> <br> <br>
+
+	<button id="btn_vote" disabled="true">Select a member first</button>
+	</center>
+
+	<script>
+		var vote;
+		function selectVote(x)
+		{
+			var frame = document.getElementById("player_vote");
+			var name = document.getElementById("namePlate");
+
+			var btn_vote = document.getElementById("btn_vote");
+			
+			switch (x)
+			{
+				case 'ren':
+					frame.src="https://www.youtube.com/embed/MSgJxH_KMns?si=995nlIBRYiOe-Y5L";
+					name.innerHTML = "Ren Amamiya";
+					vote = "ren";
+					btn_vote.innerHTML = "Vote for Ren!";
+					break;
+				
+				case 'ryuji':
+					frame.src="https://www.youtube.com/embed/NnMxRHAf_5k?si=bpktFZGPWomN9lOz";
+					name.innerHTML = "Ryuji Sakamoto";
+					vote = "ryuji";
+					btn_vote.innerHTML = "Vote for Ryuji!";
+					break;
+
+				case 'ann':
+					frame.src="https://www.youtube.com/embed/Ba49EPVG-r8?si=mNCn1Ff3zXdkETW5";
+					name.innerHTML = "Ann Takamaki";
+					vote = "ann";
+					btn_vote.innerHTML = "Vote for Ann!";
+					break;
+				
+				case 'makoto':
+					frame.src="https://www.youtube.com/embed/heIkwo4gx7k?si=dPRAPirylN6a-6pV";
+					name.innerHTML = "Makoto Niijima";
+					vote = "makoto";
+					btn_vote.innerHTML = "Vote for Makoto!";
+					break;
+				
+				case 'yusuke':
+					frame.src="https://www.youtube.com/embed/PXJi7cXBtek?si=9vHlOt5CCmJ8asFc";
+					name.innerHTML = "Yusuke Kitagawa";
+					vote = "yusuke";
+					btn_vote.innerHTML = "Vote for Yusuke!";
+					break;
+				
+				case 'futaba':
+					frame.src="https://www.youtube.com/embed/hbZzxP47nJs?si=NPKqNOeJ_Phn3mn_";
+					name.innerHTML = "Futaba Sakura";
+					vote = "futaba";
+					btn_vote.innerHTML = "Vote for Futaba!";
+					break;
+
+				case 'haru':
+					frame.src = "https://www.youtube.com/embed/hTYp4WPwSFo?si=pwzlR1O3kewFOLk9";
+					name.innerHTML = "Haru Okumura";
+					vote = "haru";
+					btn_vote.innerHTML = "Vote for Haru!";
+					break;
+				
+				case 'morgana': 
+					frame.src = "https://www.youtube.com/embed/DPfRgMlqEwY?si=SMZHNCZNUkQX-pNp";
+					name.innerHTML = "Morgana";
+					vote = "morgana";
+					btn_vote.innerHTML = "Vote for Morgana!";
+					break;
+			}
+
+			btn_vote.setAttribute("onClick","javascript: submit_vote();");
+			btn_vote.disabled = false;
+		}
+
+		function submit_vote()
+		{
+			window.location.href = 'vote?q='+vote;
+		}
+
+	</script>
+	</div>
+</body></html>

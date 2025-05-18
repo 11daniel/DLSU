@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function checkForm() {
+            //var valid = false;
+
+            // TODO: Your code here
+            var valid = true;
+
+            // Reset all field colors
+            var inputs = document.getElementsByTagName("input");
+            for (var i = 0; i < inputs.length; i++) {
+                inputs[i].style.backgroundColor = "";
+            }
+
+            // Get the input values
+            var firstName = document.getElementById("firstname").value;
+            var lastName = document.getElementById("lastname").value;
+            var email = document.getElementById("email").value;
+            var password1 = document.getElementById("password1").value;
+            var password2 = document.getElementById("password2").value;
+
+            // Check if any field is empty
+            if (firstName === "") {
+                document.getElementById("firstname").style.backgroundColor = "red";
+                valid = false;
+            }
+            if (lastName === "") {
+                document.getElementById("lastname").style.backgroundColor = "red";
+                valid = false;
+            }
+            if (email === "") {
+                document.getElementById("email").style.backgroundColor = "red";
+                valid = false;
+            }
+            if (password1 === "") {
+                document.getElementById("password1").style.backgroundColor = "red";
+                valid = false;
+            }
+            if (password2 === "") {
+                document.getElementById("password2").style.backgroundColor = "red";
+                valid = false;
+            }
+
+            // Check if passwords match
+            if (password1 !== password2) {
+                document.getElementById("password1").style.backgroundColor = "red";
+                document.getElementById("password2").style.backgroundColor = "red";
+                valid = false;
+            }
+
+            // If all fields are filled properly, greet the user via their full name
+            if (valid) {
+                var fullName = firstName + " " + lastName;
+                alert("Hello, " + fullName + "!");
+                return true; // Proceed to google.com
+            }
+            else {
+                return false;
+            }
+
+        }	
+    </script>
+</head>
+
+<body>
+    <form action="http://www.google.com" onSubmit="return checkForm()">
+        <table border=1 align="center">
+            <tr>
+                <td>First Name:</td>
+                <td><input type=text id=firstname size=25</td>
+            </tr>
+            <tr>
+                <td>Last Name:</td>
+                <td><input type=text id=lastname size=25</td>
+            </tr>
+            <tr>
+                <td>E-mail:</td>
+                <td><input type=text id=email size=25</td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type=password id=password1 size=25</td>
+            </tr>
+            <tr>
+                <td>Confirm Password:</td>
+                <td><input type=password id=password2 size=25></td>
+            </tr>
+            <tr>
+                <td colspan=2 align="right">
+                    <input type=submit value="Submit">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
