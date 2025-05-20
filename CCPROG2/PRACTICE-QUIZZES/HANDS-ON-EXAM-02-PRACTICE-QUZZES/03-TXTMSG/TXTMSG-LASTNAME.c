@@ -71,9 +71,20 @@ int
 Q1(struct inboxTag Inbox[], int inbox_number) 
 {	
     /* define the body of this function. */
+	int i;
+	int is_full;
+	if (Inbox[inbox_number].n_msgs >= MAX_INBOX_SIZE)
+	{
+		is_full = 1;
+	}
+	else
+	{
+		is_full = 0;
+	}
+	
+	
 
-
-    return -1;  /* replace -1 with the appropriate return value */
+    return is_full;  /* replace -1 with the appropriate return value */
 }
 
 
@@ -84,7 +95,46 @@ Q1(struct inboxTag Inbox[], int inbox_number)
   
    	RESTRICTION: Do not use scanf() or printf().
 */
+void swap(struct msgTag *a, struct msgTag *b)
+{
+	struct msgTag temp;
+	temp = *a;
+	*a = *b;
+	*b = temp;
+}
 
+void sortDate(struct msgTag M[], int nMessage)
+{
+	int i, j, min;
+	for(i = 0; i < nMessage - 1; i++)
+	{
+		//printf("%d %d %d %d\n ", M[i].sender, M[i].date.month, M[i].date.year, M[i].date.day);
+		min = i;
+		for(j = i + 1; j < nMessage; j++)
+		{
+			if(M[min].date.year > M[j].date.year)
+				min = j;
+			else if(M[min].date.year == M[j].date.year && M[min].date.month > M[j].date.month)
+				min = j;
+			else if(M[min].date.year == M[j].date.year && M[min].date.month == M[j].date.month && M[min].date.day > M[j].date.day)
+				min = j;
+			else if(M[min].date.year == M[j].date.year && M[min].date.month == M[j].date.month && M[min].date.day == M[j].date.day && M[min].sender > M[j].sender)
+				min = j;
+		}
+		if(i != min)
+			swap(&M[i], &M[min]);
+	}
+	
+	
+}
+
+int Q2(struct msgTag M[], int nMessage)
+{
+	//Sort the messages by the date, year, then month, then day, return the cell number of the holder
+	sortDate(M, nMessage);
+	
+	return M[nMessage-1].sender;
+}
 
 
 
@@ -97,7 +147,16 @@ Q1(struct inboxTag Inbox[], int inbox_number)
   
    	RESTRICTION: Do not use scanf() or printf().   
 */
-
+int Q3(struct msgTag M[], int nMessage)
+{
+	int unread = 0;
+	int i;
+	for(i = 0; i < nMessage; i++)
+		if(M[i].read_flag == 0)
+			unread++;
+		
+	return unread;
+}
 
 
 
@@ -109,7 +168,10 @@ Q1(struct inboxTag Inbox[], int inbox_number)
   
    	RESTRICTION: Do not use scanf() or printf().
 */
-
+int Q4(struct msgTag M[], int nMessage)
+{
+	return strlen(M[nMessage-1].msg);
+}
 
 
 
@@ -120,7 +182,16 @@ Q1(struct inboxTag Inbox[], int inbox_number)
   
    	RESTRICTION: Do not use scanf() or printf().
 */
-
+int Q5(struct msgTag M[], int nMessage, int sender, int month, int day, int year)
+{
+	int i;
+	int msg = 0;
+	for(i = 0; i < nMessage; i++)
+		if(M[i].sender == sender && M[i].date.month == month && M[i].date.day == day && M[i].date.year == year)
+			msg++;
+	//Sum algorithm where it only adds when on the same sender and date
+	return msg;
+}
 
 
 

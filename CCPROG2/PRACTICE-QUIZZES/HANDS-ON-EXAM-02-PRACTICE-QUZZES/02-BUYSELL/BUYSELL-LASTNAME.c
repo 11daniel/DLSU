@@ -33,7 +33,14 @@
 
    	RESTRICTION: DO NOT USE printf() inside this function!   
 */
+void InputSellers(struct sellerTag SELLERS[], int n_sellers) {
+	int i;
 
+	for (i = 0; i < n_sellers; i++) 
+	{
+		scanf("%d %s %s %f", &SELLERS[i].ID, SELLERS[i].first, SELLERS[i].last, &SELLERS[i].rating);
+	}
+}
 
 
 
@@ -46,7 +53,14 @@
 
    	RESTRICTION: DO NOT USE printf() inside this function!   
 */
+void InputProducts(struct productTag PRODUCTS[], int n_products) {
+	int i;
 
+	for (i = 0; i < n_products; i++) 
+	{
+		scanf("%d %s %f", &PRODUCTS[i].ID, PRODUCTS[i].product_type, &PRODUCTS[i].price);
+	}
+}
 
 
 
@@ -60,7 +74,19 @@
              
    	RESTRICTION: DO NOT USE printf() and scanf() inside this function!   
 */
-
+int Linear_Search(struct sellerTag SELLERS[], int n_sellers, int key) 
+{
+	int i;
+	
+	for (i = 0; i < n_sellers; i++)
+	{
+		if (key == SELLERS[i].ID)
+		{
+			return i;
+		}
+	}
+	return -1;
+}
 
 
 
@@ -106,6 +132,97 @@
 	View the contents of the file EXPECTED.txt for the sample expected output when the given main() function is executed.	   
 */
 
+void swap(struct sellerTag *a, struct sellerTag *b)
+{
+	struct sellerTag temp;
+	temp = *a;
+	*a = *b;
+	*b = temp;
+}
+
+void swapP(struct productTag *a, struct productTag *b)
+{
+	struct productTag temp;
+	temp = *a;
+	*a = *b;
+	*b = temp;
+}
+
+void sortPrice(struct productTag P[], int n_products)
+{
+	int i, j, min = 0;
+	for(i = 0; i < n_products - 1; i++)
+	{
+		min = i;
+		for(j = i + 1; j < n_products; j++)
+			if(P[min].price > P[j].price)
+				min = j;
+			else if(P[min].price == P[j].price && P[min].ID < P[j].ID)
+				min = j;
+			
+		if(min != i)
+			swapP(&P[i], &P[min]);
+	}
+}
+
+void sortID(struct sellerTag S[], int n_sellers)
+{
+	int i, j, min = 0;
+	for(i = 0; i < n_sellers - 1; i++)
+	{
+		min = i;
+		for(j = i + 1; j < n_sellers; j++)
+			if(S[min].ID > S[j].ID)
+				min = j;
+			
+		if(min != i)
+			swap(&S[i], &S[min]);
+	}
+}
+
+void Recommend(struct sellerTag SELLERS[], struct productTag PRODUCTS[], int n_sellers, int n_products, String30 product)
+{
+	//Search and print information about seller who is selling the product at the lowest price
+	//Note that the seller and product ID is the same
+	//Store all the potential products with the same string in one array
+	//Update only when that seller's ID's rating is 3.0 above
+	//Sort in increasing order and get index 0 as the lowest price
+	//Get that struct's productID and call linearsearch to find the user with the same ID
+	//print the info of the candidate with the same ID
+	int i, prodNo = 0, sellNo = 0, index = 0, found = 0;
+	struct productTag prodcand[MAX_PRODUCTS];
+	struct sellerTag sellcand;
+	
+	for(i = 0; i < n_products; i++)
+	{
+		if(strcmp(PRODUCTS[i].product_type, product) == 0)
+		{
+			prodcand[prodNo] = PRODUCTS[i];
+			if(SELLERS[Linear_Search(SELLERS, n_sellers, prodcand[prodNo].ID)].rating >= 3.0)
+			prodNo++;
+		}
+	}
+	
+	sortPrice(prodcand, prodNo);
+	sortID(SELLERS, n_sellers);
+	
+	if(prodNo > 0)
+	{
+		while(!found)
+		{
+			index = Linear_Search(&SELLERS[index], n_sellers - index, prodcand[0].ID);
+			if(SELLERS[index].rating >= 3.0)
+			{
+				sellcand = SELLERS[index];
+				found = 1;
+			}
+		}
+		printf("%s\t%.2f\t%d\t%s\t%s\t%.2f\n", product, prodcand[0].price, sellcand.ID, sellcand.first, sellcand.last, sellcand.rating);
+	}
+	else {
+		printf("%s\tNONE\n", product);
+	}	
+}
 
 
 

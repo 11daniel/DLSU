@@ -85,14 +85,14 @@ main()
     printf("A1: %d\n", Q1(Inbox, inbox_number));  // Q1 answer example call
 
 	// Q2: Who sent the most recent message in inbox <inbox_number>?  (answer is the number of the sender)
-    printf("A2: %d\n", -1  );   // REPLACE -1 with your function call to answer Q2.
+    printf("A2: %d\n", Q2(Inbox[inbox_number].Msg, Inbox[inbox_number].n_msgs));   // REPLACE -1 with your function call to answer Q2.
 	
 	// Q3: How many unread messages are there in inbox <inbox_number>
-    printf("A3: %d\n", -1  );   // REPLACE -1 with your function call to answer Q3.
+    printf("A3: %d\n", Q3(Inbox[inbox_number].Msg, Inbox[inbox_number].n_msgs));   // REPLACE -1 with your function call to answer Q3.
 	
 	
     // Q4: What is the string length of the most recent message in inbox <inbox_number>? 
-	printf("A4: %d\n", -1  );   // REPLACE -1 with your function call to answer Q4.
+	printf("A4: %d\n", Q4(Inbox[inbox_number].Msg, Inbox[inbox_number].n_msgs));   // REPLACE -1 with your function call to answer Q4.
 
 
  	/*
@@ -106,7 +106,7 @@ main()
 	scanf("%d %d %d", &date.month, &date.day, &date.year);
 	
 	// Q5: How many messages were received from <sender> on <date> in inbox <inbox number>?
-	printf("A5: %d\n", -1  );   // REPLACE -1 with your function call to answer Q5.
+	printf("A5: %d\n", Q5(Inbox[inbox_number].Msg, Inbox[inbox_number].n_msgs, sender, date.month, date.day, date.year));   // REPLACE -1 with your function call to answer Q5.
 						    
 	return 0;
 }

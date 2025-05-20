@@ -13,7 +13,7 @@
    TO DO:  change the #include below to the file with your own lastname.  For example if your lastname
    is SHAZAM, then it should be changed to #include "WORDSEARCH-SHAZAM.c".  
 */
-#include "WORDSEARCH-LASTNAME.c"
+#include "WORDSEARCH-CLEMENTE.c"
 
 
 /*

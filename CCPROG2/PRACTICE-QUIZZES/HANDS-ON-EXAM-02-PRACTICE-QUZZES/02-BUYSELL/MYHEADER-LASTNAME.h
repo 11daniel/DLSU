@@ -1,8 +1,8 @@
 /* 
    	Encode your Name and Section below.
 	    
-    LASTNAME, FIRSTNAME: _____________________
-    SECTION: _________
+    LASTNAME, FIRSTNAME: CLEMENTE, DANIEL GAVRIE
+    SECTION: S13A
 */
 
 #include "buysell.h"  
@@ -21,6 +21,12 @@
 	3. You have to make proper use of String30 (declared in buysell.h) for string member/s. 	   
 */
 
+struct sellerTag {
+	int ID;
+	String30 first;
+	String30 last;
+	float rating;
+};
 
 
 /* 
@@ -34,7 +40,11 @@
 	   as those given in the table in the PDF file (names are in blue font color, and yellow fill color).
 	3. You have to make proper use of String30 (declared in buysell.h) for string member/s. 	   
 */
-
+struct productTag {
+	int ID;
+	String30 product_type;
+	float price;
+};
 
 
 

@@ -17,7 +17,7 @@
    TO DO:  change the #include below to the file with your own lastname.  For example if your lastname
    is SHAZAM, then it should be changed to #include "POPULATION-SHAZAM.c".  
 */
-#include "POPULATION-LASTNAME.c"
+#include "POPULATION-CLEMENTE.c"
 
 
 /*
@@ -83,10 +83,10 @@ main()
 		The correct answers for questions in the questionnaire are in the file ANSWER.TXT.
     */
     printf("A1: %.2lf\n", Q1(YEAR, POPULATION, nYears, 2000));  // Q1 answer example call
-    printf("A2: %.2lf\n", -1.0   );      // Q2 answer
-    printf("A3: %lf\n", -1.0     );      // Q3 answer
-    printf("A4: %lf\n", -1.0     );      // Q4 answer
-    printf("A5: %lf\n", -1.0     );      // Q5 answer
+    printf("A2: %.2lf\n", Q2(YEAR, POPULATION, nYears, 2000));      // Q2 answer
+    printf("A3: %lf\n", Q3(YEAR, POPULATION, nYears, 2001));      // Q3 answer
+    printf("A4: %lf\n", Q4(YEAR, POPULATION, nYears));      // Q4 answer
+    printf("A5: %lf\n", Q5(YEAR, POPULATION, nYears));      // Q5 answer
        
     return 0;
 }
