@@ -41,7 +41,7 @@ This README outlines the progression of my Computer Science subjects by academic
 - Term 3
   - [STCLOUD - Introduction to Cloud Computing](STCLOUD)
   - [CSOPESY - Introduction to Operating Systems]()
-  - MOBICOM -
+  - MOBICOM - Mobile Computing
 
 ## 4th Year
 - Term 1
