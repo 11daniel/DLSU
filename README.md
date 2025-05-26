@@ -39,13 +39,15 @@ This README outlines the progression of my Computer Science subjects by academic
   - [STINTSY - Advanced Intelligent Systems](STINTSY)
   - [SOLLPM1 - Project Management 1](SOLLPM1)
 - Term 3
-  - STCLOUD - Introduction to Cloud Computing
-  - CSOPESY - Introduction to Operating Systems
+  - [STCLOUD - Introduction to Cloud Computing](STCLOUD)
+  - [CSOPESY - Introduction to Operating Systems]()
+  - MOBICOM -
 
 ## 4th Year
 - Term 1
   - CCINOV8 - Innovation and Technology Management
   - STDISCM - Discrete Computing
+  - SOLLQA1 - Agile Software Testing
 - Term 2
   - CSSECDV - Secure Web Development
 
