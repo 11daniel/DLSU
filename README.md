@@ -40,7 +40,7 @@ This README outlines the progression of my Computer Science subjects by academic
   - [SOLLPM1 - Project Management 1](SOLLPM1)
 - Term 3
   - [STCLOUD - Introduction to Cloud Computing](STCLOUD)
-  - [CSOPESY - Introduction to Operating Systems]()
+  - [CSOPESY - Introduction to Operating Systems](CSOPESY)
   - [MOBICOM - Mobile Computing](MOBICOM)
 
 ## 4th Year
