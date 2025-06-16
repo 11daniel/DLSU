@@ -10,7 +10,9 @@
 #include <chrono>
 #include <atomic>
 
-//g++ -std=c++17 -o threaded threaded.cpp
+//g++ -std=c++17 -o marquee marquee.cpp
+//marquee.exe Windows
+//./marquee MacOS/Linux
 
 std::string currCommand;
 std::vector<std::string> commands;
