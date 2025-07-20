@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">LectureMaterial_03_RecyclerView</string>
+    <string name="label_species">Species</string>
+    <string name="label_location">Location</string>
+    <string name="delete">Delete</string>
+</resources>
