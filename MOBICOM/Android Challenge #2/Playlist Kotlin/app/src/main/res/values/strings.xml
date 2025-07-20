@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Android Challenge 2 - Playlist</string>
+    <string name="title">Title</string>
+    <string name="media_type">Media Type</string>
+    <string name="media_duration">Media Duration</string>
+    <string name="media_image">media image</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="add_media_to_playlist">Add Media to Playlist</string>
+    <string name="media_info">MEDIA INFO</string>
+    <string name="duration">Duration</string>
+    <string name="add_notes">Add Notes</string>
+
+    <string-array name="array_media_types">
+        <item>Video</item>
+        <item>Audio</item>
+    </string-array>
+</resources>
