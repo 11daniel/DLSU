@@ -1,0 +1,10 @@
+<rule id="DE_KAHON" name="de_kahon (de-kahon)">
+	<pattern case_sensitive="no" mark_from="0">
+		<token>de</token>
+		<token>kahon</token>
+	</pattern>
+	<message><suggestion>\1-\2</suggestion></message>
+	<short>Gitling</short>
+	<example correction="de-kahon" type="incorrect"><marker>de kahon</marker></example>
+	<example type="correct"><marker>de kahon</marker></example>
+</rule>
