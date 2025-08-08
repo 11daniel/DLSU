@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/insights_tv"
+        android:layout_width="193dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="28dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Insights"
+        android:textColor="#01AA6F"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/back_btn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/ic_arrow_back"
+        app:layout_constraintEnd_toStartOf="@+id/insights_tv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/budget_cardView"
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:layout_margin="24dp"
+        android:elevation="8dp"
+        app:cardBackgroundColor="#01AA6F"
+        app:cardCornerRadius="32dp"
+        app:cardElevation="8dp"
+        app:cardMaxElevation="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/insights_tv">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Spinner
+                android:id="@+id/filterYearSpinner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/filterCategoriesSpinner" />
+
+            <Spinner
+                android:id="@+id/filterMonthSpinner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/filterYearSpinner" />
+
+            <Button
+                android:id="@+id/export_btn"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="@color/card_background"
+                android:contentDescription="Add expense"
+                android:text="export as csv"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/budget_amount_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Filter Data"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Spinner
+                android:id="@+id/filterCategoriesSpinner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/budget_amount_tv" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/month1_cardView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="24dp"
+        android:elevation="8dp"
+        app:cardBackgroundColor="@color/card_background"
+        app:cardCornerRadius="32dp"
+        app:cardElevation="8dp"
+        app:cardMaxElevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/budget_cardView">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <com.patrykandpatrick.vico.views.cartesian.CartesianChartView
+                android:id="@+id/chart_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="32dp"
+                android:padding="24dp"
+                app:chartStyle="@style/ColumnChartStyle"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

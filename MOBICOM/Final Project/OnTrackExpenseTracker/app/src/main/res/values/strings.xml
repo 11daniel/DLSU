@@ -1,0 +1,94 @@
+<resources>
+    <string name="app_name">OnTrack Expense Tracker</string>
+    <string name="login">Login</string>
+    <string name="Username">Username</string>
+    <string name="Email">Email</string>
+    <string name="AppName">OnTrack</string>
+    <string name="Password">Password</string>
+    <string name="register">Register</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="not_registered">Not Registered?</string>
+    <string name="register2">Register</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="username">Username</string>
+    <string name="toggle_password_visibility">eye toggle</string>
+    <string name="change_password">Change Password</string>
+    <string name="current_password">Current Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_change">Confirm Change</string>
+    <string name="back_button">Back Button</string>
+    <string name="password_lock">Password Lock</string>
+    <string name="add_expense">Add Expense</string>
+    <string name="save">SAVE</string>
+    <string name="amount_spent">amount spent</string>
+    <string name="date_of_expense">date of expense</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="notif_row">Notif Row</string>
+    <string name="_1">1</string>
+    <string name="notif_count">Notif Count</string>
+    <string name="notifications">Notifications</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="back">Back</string>
+    <string name="additional_notes">additional notes</string>
+    <string name="expense_name">expense name</string>
+    <string name="amount">Amount:</string>
+    <string name="date">Date:</string>
+    <string name="category">Category:</string>
+    <string name="notes">Notes:</string>
+    <string name="scan_receipt">Scan Receipt:</string>
+    <string name="scan_picture_of_receipt">Scan Picture of Receipt</string>
+    <string name="ontrack_expenses">OnTrack Expenses</string>
+    <string name="welcome">Welcome</string>
+    <string name="camera">Camera</string>
+    <string name="profile">Profile</string>
+    <string name="transactions">Transactions</string>
+    <string name="insights">Insights</string>
+
+    <string-array name="categories">
+        <item>Food</item>
+        <item>Transport</item>
+        <item>Entertainment</item>
+        <item>Utilities</item>
+        <item>Health</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="filterCategories">
+        <item>none</item>
+        <item>Food</item>
+        <item>Transport</item>
+        <item>Entertainment</item>
+        <item>Utilities</item>
+        <item>Health</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="filterMonths">
+        <item>none</item>
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+
+    <string-array name="filterYears">
+        <item>none</item>
+        <item>2025</item>
+        <item>2024</item>
+        <item>2023</item>
+        <item>2022</item>
+        <item>2021</item>
+        <item>2020</item>
+        <item>2019</item>
+    </string-array>
+
+</resources>

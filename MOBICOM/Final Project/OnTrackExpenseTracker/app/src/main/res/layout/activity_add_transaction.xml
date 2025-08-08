@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/back_btn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/ic_arrow_back"
+        android:contentDescription="@string/back_button"
+        app:layout_constraintEnd_toStartOf="@+id/title_tv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="193dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="28dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/add_expense"
+        android:textColor="#01AA6F"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/reciept_iv_cardView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="100dp"
+        android:elevation="8dp"
+        app:cardBackgroundColor="@color/card_background"
+        app:cardCornerRadius="32dp"
+        app:cardElevation="8dp"
+        app:cardMaxElevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_tv">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/scan_btn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="21dp"
+                android:background="@drawable/filled_camera_custom"
+                android:contentDescription="@string/scan_picture_of_receipt"
+                android:textColor="@android:color/transparent"
+                app:layout_constraintStart_toEndOf="@+id/parameter6"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/parameter6"
+                android:layout_width="175dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="@string/scan_receipt"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/parameter3"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="@string/category"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/parameter4" />
+
+            <TextView
+                android:id="@+id/parameter4"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="@string/date"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/parameter2" />
+
+            <TextView
+                android:id="@+id/parameter5"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="@string/notes"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/parameter3" />
+
+            <TextView
+                android:id="@+id/parameter2"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="@string/amount"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/parameter" />
+
+            <TextView
+                android:id="@+id/parameter"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="Expense: "
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/parameter6"
+                tools:ignore="HardcodedText" />
+
+            <Button
+                android:id="@+id/add_btn"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="24dp"
+                android:backgroundTint="@color/green_text_color"
+                android:contentDescription="@string/add_expense"
+                android:text="@string/save"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <EditText
+                android:id="@+id/editTextName"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:ems="10"
+                android:hint="@string/expense_name"
+                android:inputType="text"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/parameter"
+                app:layout_constraintTop_toBottomOf="@+id/parameter6" />
+
+            <EditText
+                android:id="@+id/editTextAmount"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:ems="10"
+                android:hint="@string/amount_spent"
+                android:inputType="text"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/parameter2"
+                app:layout_constraintTop_toBottomOf="@+id/editTextName" />
+
+            <EditText
+                android:id="@+id/editTextDate"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:ems="10"
+                android:focusable="false"
+                android:hint="@string/date_of_expense"
+                android:inputType="datetime"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/parameter4"
+                app:layout_constraintTop_toBottomOf="@+id/editTextAmount" />
+
+            <EditText
+                android:id="@+id/editTextTextMultiLine2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="@string/additional_notes"
+                android:inputType="textMultiLine"
+                app:layout_constraintBottom_toTopOf="@+id/add_btn"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/parameter5" />
+
+            <Spinner
+                android:id="@+id/spinnerCategory"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:outlineProvider="bounds"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/parameter3"
+                app:layout_constraintTop_toBottomOf="@+id/editTextDate" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
