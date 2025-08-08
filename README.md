@@ -39,9 +39,9 @@ This README outlines the progression of my Computer Science subjects by academic
   - [STINTSY - Advanced Intelligent Systems](STINTSY)
   - [SOLLPM1 - Project Management 1](SOLLPM1)
 - Term 3
+  - [MOBICOM - Mobile Computing](MOBICOM)
   - [STCLOUD - Introduction to Cloud Computing](STCLOUD)
   - [CSOPESY - Introduction to Operating Systems](CSOPESY)
-  - [MOBICOM - Mobile Computing](MOBICOM)
 
 ## 4th Year
 - Term 1
