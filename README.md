@@ -26,7 +26,7 @@ This README outlines the progression of my Computer Science subjects by academic
 - Term 3
   - [CSSWENG - Software Engineering](CSSWENG)
   - [CSNETWK - Introduction to Computer Networks](CSNETWK)
-  - [CSMODEL - Statiscal Modelling and Simulation](CSMODEL)
+  - [CSMODEL - Statistical Modelling and Simulation](CSMODEL)
 
 ## 3rd Year
 - Term 1
