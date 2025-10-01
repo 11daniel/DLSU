@@ -30,8 +30,8 @@ This README outlines the progression of my Computer Science subjects by academic
 
 ## 3rd Year
 - Term 1
-  - STSWENG - Advanced Software Engineering
-  - STADVDB - Advanced Database Systems
+  - [STSWENG - Advanced Software Engineering](STSWENG)
+  - [STADVDB - Advanced Database Systems](STADVDB)
   - [CSARCH2 - Introduction to Computer Organization and Architecture 2](CSARCH2)
   - [LBYARCH - Laboratory for Computer Organization and Architecture](LBYARCH)
   - [DSGNPAT - Design Patterns](DSGNPAT)
@@ -45,9 +45,9 @@ This README outlines the progression of my Computer Science subjects by academic
 
 ## 4th Year
 - Term 1
-  - CCINOV8 - Innovation and Technology Management
-  - STDISCM - Discrete Computing
-  - SOLLQA1 - Agile Software Testing
+  - [CCINOV8 - Innovation and Technology Management](CCINOV8)
+  - [STDISCM - Discrete Computing](STDISCM)
+  - [SOLLQA1 - Agile Software Testing](SOLLQA1)
 - Term 2
   - CSSECDV - Secure Web Development
 
@@ -55,6 +55,6 @@ This README outlines the progression of my Computer Science subjects by academic
 - [ITSECUR - Introduction to Security](ITSECUR)
 - [NSCOM01 - Network Application Protocols](NSCOM01)
 - [NSSECU2 - Advanced and Offensive Security](NSSECU2)
-- NSSECU3 - Digital Forensics
+- [NSSECU3 - Digital Forensics](NSSECU3)
   
 This document serves as a roadmap for my learning journey in Computer Science, highlighting key subjects covered each year.
