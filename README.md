@@ -49,7 +49,7 @@ This README outlines the progression of my Computer Science subjects by academic
   - [STDISCM - Discrete Computing](STDISCM)
   - [SOLLQA1 - Agile Software Testing](SOLLQA1)
 - Term 2
-  - CSSECDV - Secure Web Development
+  - [CSSECDV - Secure Web Development](CSSECDV)
 
 ## Minor in Cybersecurity
 - [ITSECUR - Introduction to Security](ITSECUR)
