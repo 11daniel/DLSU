@@ -1,0 +1,3 @@
+/Users/gavrie/build/CMakeFiles/ocr_demo.dir
+/Users/gavrie/build/CMakeFiles/edit_cache.dir
+/Users/gavrie/build/CMakeFiles/rebuild_cache.dir

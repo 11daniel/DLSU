@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/Users/gavrie/STDISCM PSET3/build",
+  "command": "/usr/bin/clang++  -I/usr/local/opt/leptonica/include -I/usr/local/opt/tesseract/include -g -std=gnu++20 -o CMakeFiles/ocr_demo.dir/ocr_demo.cpp.o -c \"/Users/gavrie/STDISCM PSET3/ocr_demo.cpp\"",
+  "file": "/Users/gavrie/STDISCM PSET3/ocr_demo.cpp",
+  "output": "CMakeFiles/ocr_demo.dir/ocr_demo.cpp.o"
+}
+]

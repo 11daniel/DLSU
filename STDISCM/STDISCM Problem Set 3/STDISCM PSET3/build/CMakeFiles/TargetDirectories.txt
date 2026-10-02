@@ -1,0 +1,3 @@
+/Users/gavrie/STDISCM PSET3/build/CMakeFiles/ocr_demo.dir
+/Users/gavrie/STDISCM PSET3/build/CMakeFiles/edit_cache.dir
+/Users/gavrie/STDISCM PSET3/build/CMakeFiles/rebuild_cache.dir

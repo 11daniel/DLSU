@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/ocr_demo.dir/ocr_demo.cpp.o -o ocr_demo   -L/usr/local/opt/leptonica/lib  -L/usr/local/opt/tesseract/lib  -Wl,-rpath,/usr/local/opt/leptonica/lib -Wl,-rpath,/usr/local/opt/tesseract/lib -ltesseract -lleptonica
